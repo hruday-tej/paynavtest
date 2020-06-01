@@ -7,7 +7,7 @@
 
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet"  href="/static/css/style.css" type="text/css">
+    <link rel="stylesheet"  href="static/css/style.css" type="text/css">
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -18,32 +18,40 @@
 </head>
 <body>
 
-    <header >
-        <div class="container-fluid m-0">
-
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark nav-custom" id = "nav">
-                <a class="navbar-brand" href="index.html">
-                  <img src="/static/images/PayNav_logo.png" id="Logo" class="rounded ml-4 mr-2  d-block nav-header-img-custom"  alt="Logo Here"></a>
-                  <h2 id="Logo" style="font-family: 'Asap', sans-serif; color: #fff;">PayNav</h2>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                      <li class="nav-item mr-4">
-                          <a class="nav-link active" href="#" style="color: white;">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                      </li>
-                  </ul>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light nav-custom" id="nav-clr">
+        <a class="navbar-brand" href="#">
+          <img src="static/images/PayNav_logo.png" class="nav-header-img-custom" id="Logo" alt="Logo Here"></a>
+          <h2 style="font-family: 'Asap', sans-serif; color: #fff;">PayNav</h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
               </div>
-              </nav>
-
-
-
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
-    </header>
+      </nav>
 
 
     
@@ -101,12 +109,17 @@
       
       function growShrinkLogo() {
         var Logo = document.getElementById("Logo")
+        var clr = document.getElementById("nav-clr")
         if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
           Logo.style.width = '50px';
           Logo.style.height = '50px'
+          clr.classList.add("nav-colored");
+          clr.classList.remove("nav-custom");
         } else {
           Logo.style.width = '60px';
           Logo.style.height = '60px';
+          clr.classList.add("nav-custom");
+          clr.classList.remove("nav-colored");
         }
       }
       </script>
