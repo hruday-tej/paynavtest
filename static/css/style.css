@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    /* background: url("/static/images/bg1920.png") ; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+
+.nav-header-img-custom{
+    width:60px;
+    height: 60px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    transition: all .3s linear;
+}
+
+.nav-custom{
+    background-color: #473DE7 !important;
+}
+
+nav div ul li a.active {
+    background: rgb(0, 0,0,0.2);
+    border-radius: 40px;
+    padding: 5px;
+}
+nav div ul li a{
+    width: 80px;
+    text-align: center;
+}
