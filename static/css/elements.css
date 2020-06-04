@@ -57,6 +57,11 @@
     margin-left: 100px;
 }
 
+.centerTest {
+    width:100%;
+    text-align:center;
+}
+
 
 
 *{

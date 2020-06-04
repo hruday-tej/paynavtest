@@ -11,7 +11,12 @@ nav div ul li a.active {
     width: 100%;
 }
 nav div ul li  {
-    color: white
+    color: white;
+    font-size: 22px;
+}
+nav{
+    min-height: 100px !important;
+    transition: display 1s ease-in;
 }
 
 .mobile-header-body {
@@ -24,6 +29,7 @@ nav div ul li  {
 
 .cust-nav-link{
     color: white !important;
+    
 }
 
 .nav-custom{
