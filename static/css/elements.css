@@ -38,13 +38,14 @@
     text-align: left;
     color: rgba(0,0,0,.6);
     margin-right: 0px;
+    margin-left: 50px;
     font-family: 'Dosis', sans-serif;
 }
 
 .section-content-r {
-    margin-right: 10px;
+   
+    margin-left: 0px;
     margin-top: 30px;
-    
 }
 
 .section-description-r li {
@@ -53,6 +54,7 @@
     padding: 1rem 0 1rem 3.5rem;
     list-style: none;
     font-size: 25px;
+    margin-left: 100px;
 }
 
 
