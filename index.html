@@ -8,6 +8,9 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet"  href="static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="static/css/navstyle.css" type="text/css">
+    <link rel="stylesheet" href="static/css/info.css" type="text/css">
+    <link rel="stylesheet" href="static/css/elements.css" type="text/css">
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -15,34 +18,43 @@
 
     <!-- Font Families Only -->
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Montserrat&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body >
 
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top nav-custom" id="myNavbar">
 
-    <div class="container-fluid">
-      <a href="#" class="navbar-brand">
-        <img src="static/images/PayNav_logo.png" style="height: 60px; width: 60px;" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <div class="container-fluid nav-custom" >
+      <a class="navbar-brand" href="#">
+        <img src="static/images/PayNav_logo.png" class="nav-header-img-custom" id="Logo" alt="Logo Here"></a>
+      <a href="#" class="navbar-brand ml-4">
+        <h2 id="txt" style="font-family: Asap, Helvetica, sans-serif; color: white;" >PayNav</h2>
+      </a> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" style="background-color: white;" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse"  id="navbarResponsive">
 
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto ">
 
-          <li class="nav-item active">
-            <a href="#" class="nav-link">Home</a>
+          <li class="nav-item active mr-3 ">
+            <a href="#" class="nav-link active " id="txt1" style="color: #fff;">Home</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+          <li class="nav-item mr-3">
+            <a href="#" class="nav-link " id="txt2" style="color: #fff;">About</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+          <li class="nav-item mr-3">
+            <a href="#" class="nav-link " id="txt3" style="color: #fff;">Features</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+          <li class="nav-item mr-3">
+            <a href="#" class="nav-link " id="txt4" style="color: #fff;">Contact Us</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a href="#" class="nav-link " id="txt5" style="color: #fff;">Sign In</a>
           </li>
           
 
@@ -56,40 +68,91 @@
 
 
     
-    <!-- <section class="banner">
+    <section class="banner">
      
     </section>
 
-     
-    <div class="container">
-      <div class="card">
-        <div class="rows">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, odio sit, veniam perferendis velit laborum ex ad quas corporis sint, fuga in id voluptatibus nihil numquam quo dolor consectetur officia?</p>
+    <section class="hipage">  
+      <div class="container-fluid my-container" style="margin: 0rem; padding: 0rem;">
+        <div class="row my-row justify-content-center align-items-center">
+          <div class="col-sm-6 my-col">
+            <div class="section-heading-l">
+              <span>Hey There!<br> Welcome to <span class="highlightme">PayNav</span></span>
+            </div>
+            <div class="section-content-l">
+              <ul class="section-description-l">
+                <li>
+                  I Help You Find Your Love
+                </li>
+                <li>
+                  I Help You Find Your Love
+                </li>
+                <li>
+                  I Help You Find Your Love
+                </li>
+                <li>
+                  I Help You Find Your Love
+                </li>
+              </ul>
+            </div>                
+          </div>
+          <div class="col-sm-6 my-col">            
+            <div class="imgr"> <img src="static/images/first.png"style=" height:43rem ;position:relative;right: 0; float: Right;"/></div>            
+          </div>            
+        </div>      
+      </div>
+    </section>
+
+    <section class="page2">
+      <!-- <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quos commodi! Fugit, minus. Quia sunt aliquam, reprehenderit iste repudiandae ducimus, cumque odit vel tempora assumenda aliquid illum! Facere, dolorem magni?</p>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quos commodi! Fugit, minus. Quia sunt aliquam, reprehenderit iste repudiandae ducimus, cumque odit vel tempora assumenda aliquid illum! Facere, dolorem magni?</p>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quos commodi! Fugit, minus. Quia sunt aliquam, reprehenderit iste repudiandae ducimus, cumque odit vel tempora assumenda aliquid illum! Facere, dolorem magni?</p>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quos commodi! Fugit, minus. Quia sunt aliquam, reprehenderit iste repudiandae ducimus, cumque odit vel tempora assumenda aliquid illum! Facere, dolorem magni?</p>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quos commodi! Fugit, minus. Quia sunt aliquam, reprehenderit iste repudiandae ducimus, cumque odit vel tempora assumenda aliquid illum! Facere, dolorem magni?</p>
+      </div> -->
+
+      <div class="container-fluid" style="margin: 0rem; padding: 0rem;">
+        <div class="row justify-content-center align-items-center">
+
+          <div class="col sm-6">
+            <div class="imgl"> <img src="static/images/second.png"style=" height:43rem ;position:relative;left: 0; float: left;"/></div>
+          </div>
+          <div class="col sm-6">
+
+            <div class="section-heading-r">
+              <span>No more awkward<br> moments of <span class="highlightme">Reminding</span></span>
+            </div>
+            <div class="section-content-r">
+              <ul class="section-description-r">
+                <li>
+                  E-signature terms as proof of transaction 
+                </li>
+                <li>
+                  Promised payback dates
+                </li>
+                <li>
+                  No math to do, Automated ledger 
+                </li>
+                <li>
+                  Real time transactions using UPI 
+                </li>
+              </ul>
+            </div>     
+
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="card">
-        <div class="rows">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, odio sit, veniam perferendis velit laborum ex ad quas corporis sint, fuga in id voluptatibus nihil numquam quo dolor consectetur officia?</p>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="card">
-        <div class="rows">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, odio sit, veniam perferendis velit laborum ex ad quas corporis sint, fuga in id voluptatibus nihil numquam quo dolor consectetur officia?</p>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="card">
-        <div class="rows">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, odio sit, veniam perferendis velit laborum ex ad quas corporis sint, fuga in id voluptatibus nihil numquam quo dolor consectetur officia?</p>
-        </div>
-      </div>
-    </div>
- -->
+    </section>
+    
 
 
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -110,19 +173,52 @@
       
       function growShrinkLogo() {
         var Logo = document.getElementById("Logo")
-        var clr = document.getElementById("nav-clr")
+        var clr = document.getElementById("myNavbar")
+        var txt = document.getElementById("txt")
+        var txt1 = document.getElementById("txt1")
+        var txt2 = document.getElementById("txt2")
+        var txt3 = document.getElementById("txt3")
+        var txt4 = document.getElementById("txt4")
+        var txt5 = document.getElementById("txt5")
         if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
           Logo.style.width = '50px';
-          Logo.style.height = '50px'
-          // clr.classList.add("nav-colored");
-          // clr.classList.remove("nav-custom");
+          Logo.style.height = '50px';
+          txt.style.color='#000';
+          clr.classList.add("nav-colored");
+          clr.classList.remove("nav-custom");
+          txt1.style.color = '#000'
+          txt2.style.color = '#000'
+          txt3.style.color = '#000'
+          txt4.style.color = '#000'
+          txt5.style.color = '#000'
         } else {
           Logo.style.width = '60px';
           Logo.style.height = '60px';
-          // clr.classList.add("nav-custom");
-          // clr.classList.remove("nav-colored");
+          txt.style.color='#fff'
+          clr.classList.add("nav-custom");
+          clr.classList.remove("nav-colored");
+          txt1.style.color = '#fff'
+          txt2.style.color = '#fff'
+          txt3.style.color = '#fff'
+          txt4.style.color = '#fff'
+          txt5.style.color = '#fff'
         }
       }
       </script>
+      <script>
+        $("#myNavbar").click(function () {
+            windowsize = $(window).width();
+    
+            if (windowsize < 440) {
+                $("#navbarResponsive").css({"background-color": "#ffffff", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)","padding":"10px"});
+                // $('.nav-custom').css({"background-color": "#ffffff", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)"});
+              }
+            else{
+              $("#navbarResponsive").css({"background-color": "transparent","padding":"10px"});
+
+            }
+        });
+    
+    </script>
 </body>
 </html>
