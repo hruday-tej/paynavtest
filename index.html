@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="static/css/navstyle.css" type="text/css">
     <link rel="stylesheet" href="static/css/info.css" type="text/css">
     <link rel="stylesheet" href="static/css/elements.css" type="text/css">
+    <link rel="stylesheet" href="static/css/mobile.css" type="text/css">
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -21,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 
 </head>
@@ -31,9 +33,9 @@
 
     <div class="container-fluid nav-custom" >
       <a class="navbar-brand" href="#">
-        <img src="static/images/PayNav_logo.png" class="nav-header-img-custom" id="Logo" alt="Logo Here"></a>
+        <img src="static/images/PayNav_logo.png" class="nav-header-img-custom" id="Logo" style="margin-left: 70px;" alt="Logo Here"></a>
       <a href="#" class="navbar-brand ml-4">
-        <h2 id="txt" style="font-family: Asap, Helvetica, sans-serif; color: white;" >PayNav</h2>
+        <h2 id="txt"  style="font-family: Asap, Helvetica, sans-serif; color: white; text-shadow: 3px 6px 6px  rgba(0,0,0,.7); font-weight: 600;" >PayNav</h2>
       </a> 
       <button class="navbar-toggler" type="button" data-toggle="collapse" style="background-color: white;" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
@@ -43,7 +45,7 @@
         <ul class="navbar-nav ml-auto ">
 
           <li class="nav-item active mr-3 ">
-            <a href="#" class="nav-link active " id="txt1" style="color: #fff;">Home</a>
+            <!-- <a href="#" class="nav-link " id="txt1" style="color: #fff;">Home</a> -->
           </li>
           <li class="nav-item mr-3">
             <a href="#" class="nav-link " id="txt2" style="color: #fff;">About</a>
@@ -67,17 +69,68 @@
   </nav>
      
 
+  <section class="banner">
+      <div class="container-fluid">
+        
 
-    
-    <section class="banner">
+          <div class="container-fluid">
+            <div class="row  justify-content-start align-items-center">
+              <div class="col-md-4  " style="margin-top: 200px; margin-bottom: 200px;">
+                
+                <div class="mobile shadow-lg" style=" left: 160px; float: left;">
+                  <div class="left"></div>
+                  <div class="right"></div>
+                  <div class="top">
+  
+                  </div>
+                  <div class="bottom">
+  
+                  </div>
+                  <div class="screen">
+                    <img src="static/images/mobile-bg-2.png" style="height: 480px;width: 270px;" alt="">
+                  </div>
+                </div>
+              
+              
+              </div>
+              <div class="col-md-8 ">
+                <div class="container">
+                  <div class="row align-items-start">
+                    <div class="col" class="highlightme">
+                      <div class="row" style="margin-bottom: 30px; margin-left: 40px;">
+                        <span> <span style="font-size: 50px; font-weight: 600; font-family: Dosis;color: white; ">Lend and Borrow money with<br>friends, family and acquaintance !</span></span>
+                      </div>
+                      <div class="row mt-2 " style="margin-bottom: 100px; margin-left: 40px;">
+                        <span> <span style="font-size: 20px; font-weight: 600; font-family: Dosis;color: white;">India’s first relationship based lending app to securely lend<br>or honestly borrow in personal transactions !</span></span>
+                      </div>              
+                      <div class="row mt-4" style="margin-bottom: 140px; margin-left: 100px;" >
+                        <button type="button" class="btn btn-outline-light " style="corner-radius:30px;">Download</button>
+                      </div>      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+        
+      
+      </div>
      
     </section>
-
     
-    <div class="wrapper">
-      <div class="container-fluid my-container" style="margin: 0rem; padding: 0rem;">
-        <div class="row my-row justify-content-center align-items-center">
-          <div class="col-sm-6 my-col">
+    <div class="wrapper" >
+
+      <!-- BODY CONTENT -->
+      <div class="container-fluid " style="margin: 0rem; padding: 0rem;">
+        <!-- PAGE 1 -->
+        <div class="row  justify-content-center align-items-center ">
+
+
+          
+
+          <div class="col-sm-6 " id="left1">
             <div class="section-heading-l">
               <span>Hey There!<br> Welcome to <span class="highlightme">PayNav</span></span>
             </div>
@@ -98,21 +151,18 @@
               </ul>
             </div>                
           </div>
-          <div class="col-sm-6 my-col">            
-            <div class="imgr"> <img src="static/images/first.png"style=" height:43rem ;position:relative;right: 0; float: Right;"/></div>            
-          </div>            
-        </div>  
-        
-        
-        <div class="row my-row justify-content-center align-items-center">
-          <div class="col-sm-6 my-col">
-              <div class="imgl"> <img src="static/images/second.png"style=" height:43rem ;position:relative;left: 0; float: Left;"/></div>         
-          </div>
-          <div class="col-sm-6 my-col">            
-               
-            
-            
 
+          <div class="col-sm-6 "  id="right1">           
+            <div class="imgr"> <img src="static/images/first.png" class="img-fluid" style=" height:43rem ;position:relative;right: 0; float: Right;"/></div>            
+          </div> 
+                     
+        </div>          
+        <!-- PAGE 2 -->
+        <div class="row  justify-content-center align-items-center">
+          <div class="col-sm-6 ">
+              <div class="imgl"> <img src="static/images/second.png"  class="img-fluid" style=" height:43rem ;position:relative;left: 0; float: Left;"/></div>         
+          </div>
+          <div class="col-sm-6 ">
             <div class="section-heading-r">
               <span>No more awkward<br> moments of  <span class="highlightme">Reminding</span></span>
             </div>
@@ -134,11 +184,9 @@
             </div>
           </div>            
         </div>
-
-
-
-        <div class="row my-row justify-content-center align-items-center">
-          <div class="col-sm-6 my-col">
+        <!-- PAGE 3 -->
+        <div class="row  justify-content-center align-items-center">
+          <div class="col-sm-6 ">
             <div class="section-heading-l">
               <span><span class="highlightme">Easy </span> to use</span>
             </div>
@@ -159,21 +207,16 @@
               </ul>
             </div>                
           </div>
-          <div class="col-sm-6 my-col">            
-            <div class="imgr"> <img src="static/images/third.png"style=" height:43rem ;position:relative;right: 0; float: Right;"/></div>            
+          <div class="col-sm-6 ">            
+            <div class="imgr"> <img src="static/images/third.png" class="img-fluid" style=" height:43rem ;position:relative;right: 0; float: Right;"/></div>            
           </div>            
-        </div> 
-        
-
-        <div class="row my-row justify-content-center align-items-center">
-          <div class="col-sm-6 my-col">
-              <div class="imgl"> <img src="static/images/fourth.png"style=" height:43rem ;position:relative;left: 0; float: Left;"/></div>         
+        </div>        
+        <!-- PAGE 4 -->
+        <div class="row  justify-content-center align-items-center">
+          <div class="col-sm-6 ">
+              <div class="imgl"> <img src="static/images/fourth.png" class="img-fluid" style=" height:43rem ;position:relative;left: 0; float: Left;"/></div>         
           </div>
-          <div class="col-sm-6 my-col">            
-               
-            
-            
-
+          <div class="col-sm-6 ">
             <div class="section-heading-r">
               <span>You'r <span class="highlightme">Safety & Security </span><br> Is our topmost Priority  </span>
             </div>
@@ -193,9 +236,9 @@
                 </li>
               </ul>
             </div>
-          </div>            
+          </div>
+       <!-- END  -->
         </div>
-        
 
 
 
@@ -203,7 +246,7 @@
 
 
 
-      <div class="card container border-dark rounded-10 shadow p-3 mb-5 bg-white rounded" style="margin-top: 30px ;padding: 30px; border-radius: 20px !important;">
+      <div class="card container border rounded-10 shadow p-3 mb-5 bg-white rounded" style="margin-top: 30px ;padding: 30px; border-radius: 20px !important;">
         <div class="card-title justify-content-center centerTest"><span ><span class="highlightme" style="font-weight: 600; font-size: 50px; text-align: center;">Customer Reviews<br></span></span>
 
         <span ><span class="highlightme" style="font-weight: 600;color: rgba(0,0,0,.6);font-size: 25px; text-align: center;">What our customers are saying ...<br><br></span></span></div>
@@ -211,8 +254,8 @@
 
           <div class="col-sm-4">
             <div class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
-              
-              <div class="card-body" style="margin-bottom: 0rem; height: 200px; padding: 20px; justify-content: stretch;">
+              <img src="static/images/invertedgreen.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
+              <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; justify-content: stretch;">
                 <!-- <h5 class="card-title">Welcome Customers</h5> -->
                 <p class="card-text">Very helpful for managing all my personal lending/borrowing with friends and family. There are many facilities available in this app like online ledger, automated payback reminder,E-Sign etc but the main thing is the direct real time transaction from my upi id to my friends upi.</p>
               </div>
@@ -222,7 +265,8 @@
 
           <div class="col-sm-4">
             <div class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
-              <div class="card-body" style="margin-bottom: 0rem; height: 200px; padding: 20px; justify-content: stretch;">
+              <img src="static/images/invertedblue.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
+              <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; justify-content: stretch;">
                 <!-- <h5 class="card-title">Welcome Customers</h5> -->
                 <p class="card-text">Problem solving app for many money lending between friends, many people will not meet their obligations when it comes to money but using this app surely they will😅. Thanks to Paynav for this amazing "meet your obligations" app.</p>
               </div>
@@ -232,22 +276,23 @@
 
           <div class="col-sm-4">
             <div class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
-              <div class="card-body" style="margin-bottom: 0rem; height: 200px; padding: 20px; justify-content: stretch;">
+              <img src="static/images/invertedpurple.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
+              <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; justify-content: stretch;">
                 <p class="card-text">This app is great for all people, especially for people with personal financial intelligence. It keeps track of the money you lent. Good to have my money back same time have my friendships tight. One word Hassle free.</p>
               </div>
               <img class="card-img-bottom" src="static/images/review3.png" alt="Card image cap">
             </div>
           </div>
-          
-
-
         </div>
-
-
       </div>
-
-      
     </div> 
+
+
+
+
+
+    
+    
       
 
 
@@ -275,7 +320,7 @@
         var Logo = document.getElementById("Logo")
         var clr = document.getElementById("myNavbar")
         var txt = document.getElementById("txt")
-        var txt1 = document.getElementById("txt1")
+        // var txt1 = document.getElementById("txt1")
         var txt2 = document.getElementById("txt2")
         var txt3 = document.getElementById("txt3")
         var txt4 = document.getElementById("txt4")
@@ -283,10 +328,13 @@
         if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
           Logo.style.width = '50px';
           Logo.style.height = '50px';
-          txt.style.color='#000';
+          txt.style.color='#0D03F8';
+          txt.style.textShadow='3px 6px 6px  rgba(0,0,0,.4)';
+
+          txt.style.fontWeight='600';
           clr.classList.add("nav-colored");
           clr.classList.remove("nav-custom");
-          txt1.style.color = '#000'
+          // txt1.style.color = '#000'
           txt2.style.color = '#000'
           txt3.style.color = '#000'
           txt4.style.color = '#000'
@@ -297,7 +345,7 @@
           txt.style.color='#fff'
           clr.classList.add("nav-custom");
           clr.classList.remove("nav-colored");
-          txt1.style.color = '#fff'
+          // txt1.style.color = '#fff'
           txt2.style.color = '#fff'
           txt3.style.color = '#fff'
           txt4.style.color = '#fff'
@@ -308,10 +356,12 @@
       <script>
         $("#myNavbar").click(function () {
             windowsize = $(window).width();
-    
+            var l = document.getElementById("left1")
+            var r = odcument.getElementById("right1");
             if (windowsize < 440) {
                 $("#navbarResponsive").css({"background-color": "#ffffff", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)","padding":"10px"});
                 // $('.nav-custom').css({"background-color": "#ffffff", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)"});
+                
               }
             else{
               $("#navbarResponsive").css({"background-color": "transparent","padding":"10px"});

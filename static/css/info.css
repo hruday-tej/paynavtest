@@ -1,6 +1,5 @@
 .highlightme{
     color: #473DE7;
-    font-size: 70px;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -31,11 +30,16 @@ html, body{
     position: absolute;
 }
     
+.left1{
+    order: 2;
+}
+.right1{
+    order: 1;
+}
 
 
 
-
-/* .my-container{
+.my-container{
     border: 1px solid green;
 }
 .my-row{
@@ -46,4 +50,4 @@ html, body{
 
 .my-col{
     border: 3px dotted blue;
-} */
+}

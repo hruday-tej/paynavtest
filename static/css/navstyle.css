@@ -4,6 +4,7 @@
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
     transition: all .3s linear;
+
 }
 
 nav div ul li a.active {
@@ -12,7 +13,8 @@ nav div ul li a.active {
 }
 nav div ul li  {
     color: white;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: 'roboto', sans-serif;
 }
 nav{
     min-height: 100px !important;
