@@ -26,26 +26,31 @@
         .my-col{
             border: 3px dotted blue;
         }
+        .col-md-6{
+    border: 1px solid black;
+}
     </style>
 </head>
 <body>
-    <div class="container my-container">
-        <div class="row my-row">
-            <div class="col-4 my-col">
-                Row1 Col1
-            </div>
-            <div class="col-8 my-col">
-                Row1 Col2
-            </div>
+    <!-- <div class="container">
+        <div class="row">
+
+            <div class="col-sm-8 col-sm-pull-4">B</div>
+            <div class="col-sm-4 col-sm-push-8">A</div>
+            
         </div>
-        <div class="row my-row justify-content-center align-items-center">
-            <div class="col-4 my-col">
-                Row2 Col1
-            </div>
-            <div class="col-4 my-col align-self-start">
-                Row2 Col2
-            </div>
+
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-1 order-lg-2">
+            This column will be ordered second on large to extra large screens
+          </div>
+          <div class="col-md-6 order-2 order-lg-1">
+            This column will be ordered first on large to extra large screens
+          </div>
         </div>
-    </div>
+      </div>
 </body>
 </html>
