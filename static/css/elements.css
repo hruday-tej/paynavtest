@@ -84,3 +84,12 @@
     padding: 0px;
     overflow-x: hidden; 
 } */
+
+#Logo{
+    margin-left: 0px;
+}
+@media (min-width: 576px){
+    #Logo{
+        margin-left: 150px;
+    }
+}
