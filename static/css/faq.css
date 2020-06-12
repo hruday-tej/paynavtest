@@ -1,0 +1,85 @@
+.section-header {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 3.4rem;
+    margin-top: 5rem;
+}
+
+.section-heading.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#faq-container {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+@media (min-width: 992px)
+{.container {
+    max-width: 960px;
+}}
+
+.row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+}
+
+.faq-nav {
+    flex-direction: column;
+    margin: 0 0 2em;
+}
+
+.nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    list-style: none !important;
+}
+
+.faq-nav .nav-link {
+    position: relative;
+    display: block;
+    padding: 13px 16px;
+    background-color: #fff;
+    border-radius: .6rem;
+    color: rgba(0,0,0,.67);
+    transition: background-color .2s ease;
+    margin-bottom: .6rem;
+    cursor: pointer;
+}
+
+.faq-nav .nav-link.active {
+    font-weight: 700;
+    color: rgba(0,0,0,.87);
+}
+.faq-nav .nav-link.active, .faq-nav .nav-link:hover {
+    background-color: #fff;
+    box-shadow: 0 0.01rem 0.16rem rgba(0,0,0,.3);
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+.card-header h5 button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    font-weight: 500;
+    color: rgba(0,0,0,.67);
+    text-align: left;
+    white-space: normal;
+    vertical-align: center;
+}
+.card-header h5 button:hover{
+    text-decoration: none;
+    color: rgba(0,0,0,.9);
+}

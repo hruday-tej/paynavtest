@@ -2,10 +2,235 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />    
+    <title>PayNav- FAQ</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet"  href="static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="static/css/navstyle.css" type="text/css">
+    <link rel="stylesheet" href="static/css/info.css" type="text/css">
+    <link rel="stylesheet" href="static/css/elements.css" type="text/css">
+    <link rel="stylesheet" href="static/css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="static/css/footer.css" type="text/css">
+    <link rel="stylesheet" href="static/css/contactus.css" type="text/css">
+    <link rel="stylesheet" href="static/css/faq.css" type="text/css">
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <!-- Font Families Only -->
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top nav-custom shadow" id="myNavbar">
+
+        <div class="container-fluid nav-custom" >
+          <a class="navbar-brand" href="#">
+            <img src="static/images/PayNav_logo.png" class="nav-header-img-custom" id="Logo" style="margin-left: 70px;" alt="Logo Here"></a>
+          <a href="#" class="navbar-brand ml-4">
+            <h2 id="txt"  style="font-family: Asap, Helvetica, sans-serif; color: #0D03F8; text-shadow: 3px 6px 6px  rgba(0,0,0,.3); font-weight: 600;" >PayNav</h2>
+          </a> 
+          <button class="navbar-toggler" type="button" data-toggle="collapse" style="background-color: white;" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"  id="navbarResponsive">
     
+            <ul class="navbar-nav ml-auto ">
+    
+              <li class="nav-item active mr-3 ">
+                <!-- <a href="#" class="nav-link " id="txt1" style="color: #fff;">Home</a> -->
+              </li>
+              <li class="nav-item" style="margin-right: 40px;">
+                <a href="#" class="nav-link " id="txt2" style="color: #000;">About</a>
+              </li>
+              <li class="nav-item" style="margin-right: 40px;">
+                <a href="#" class="nav-link " id="txt3" style="color: #000;">Features</a>
+              </li>
+              <li class="nav-item" style="margin-right: 40px;">
+                <a href="#" class="nav-link " id="txt4" style="color: #000;" >Contact Us</a>
+              </li>
+              <li class="nav-item" style="margin-right: 40px;">
+                <a href="#" class="nav-link active-dark" id="txt5" style="color: white;">Sign In</a>
+              </li>
+              
+    
+            </ul>
+    
+          </div>
+        </div>
+    
+    </nav>
+
+    <div class="wrapper" style="margin-top: 150px;">
+        <div class="section-header">
+            <div class="section-heading center"><span class="lighter">Frequently asked </span><span class="highlightme">questions</span>
+            </div>
+        </div>
+
+        <div class="container" id="faq-container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="nav flex-column nav-pills faq-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="aboutuspill-tab" data-toggle="pill" href="#aboutuspill" role="tab" aria-controls="aboutuspill" aria-selected="true">About Us</a>
+                        <a class="nav-link" id="forallpill-tab" data-toggle="pill" href="#forallpill" role="tab" aria-controls="forallpill" aria-selected="false">For All</a>
+                        <a class="nav-link" id="requestorpill-tab" data-toggle="pill" href="#requestorpill" role="tab" aria-controls="requestorpill" aria-selected="false">Requestor</a>
+                        <a class="nav-link" id="giverpill-tab" data-toggle="pill" href="#giverpill" role="tab" aria-controls="giverpill" aria-selected="false">Giver</a>
+                        <a class="nav-link" id="featurespill-tab" data-toggle="pill" href="#featurespill" role="tab" aria-controls="featurespill" aria-selected="false">Features</a>
+                        <a class="nav-link" id="contactus-tab" data-toggle="pill" href="#contactuspill" role="tab" aria-controls="contactuspill" aria-selected="false">contact Us</a>
+                      </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="aboutuspill" role="tabpanel" aria-labelledby="aboutuspill-tab">
+                            <div id="accordion1">
+                                <div class="card ">
+                                  <div class="card-header" id="headingOne">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration:none;">What is FamPay?<span><img id="minus"></span></button>
+                                    </h5>
+                                  </div>
+                              
+                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion1">
+                                    <div class="card-body">
+                                        PayNav is a relationship-based lending mobile platform that allows you to securely lend and borrow money with friends and family. It is a secure lending platform that simplifies loans between friends and family.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card mt-2">
+                                  <div class="card-header" id="headingTwo">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="text-decoration:none;">Who is it for?<span><img id="minus"></span></button>
+                                    </h5>
+                                  </div>
+                                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+                                    <div class="card-body">
+                                        Paynav is for everyone amongst you who wants to secure the money if they are expecting a secure return, at the same time anyone who needs money and wants to show high level honesty of paying back exactly on time. Anyone above the age of 18 years can sign up to use our services and get digital e-signature along with loads of value adding features for free.
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="forallpill" role="tabpanel" aria-labelledby="forallpill-tab">
+
+                            <div id="accordion2">
+                                <div class="card ">
+                                  <div class="card-header" id="headingOne">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration:none;">Is my data Secure?<span><img id="minus"></span></button>
+                                    </h5>
+                                  </div>
+                              
+                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion2">
+                                    <div class="card-body">
+                                        We maintain gold standards with security and use best practices. The privacy and security of your data is our top priority. We outline our policies and practices in our Terms of Service and Privacy Policy
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card mt-2">
+                                  <div class="card-header" id="headingTwo">
+                                    <h5>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="text-decoration:none;">Why do you need my Pan Card (Mandatory)?<span><img id="minus"></span></button>
+                                    </h5>
+                                  </div>
+                                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
+                                    <div class="card-body">
+                                        We use PanCard to verify users and create a risk free financial environment from fake profiles.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card mt-2">
+                                    <div class="card-header" id="headingThree">
+                                        <h5>
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >Do you use my Pan Card details?<span><img  id="minus"></span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+                                        <div class="card-body">
+                                            We use PanCard to verify users and create a risk free financial environment from fake profiles.
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="requestorpill" role="tabpanel" aria-labelledby="requestorpill-tab">...</div>
+                        <div class="tab-pane fade" id="giverpill" role="tabpanel" aria-labelledby="giverpill-tab">...</div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $("#myNavbar").click(function () {
+            windowsize = $(window).width();
+            var l = document.getElementById("left1");
+            var r = odcument.getElementById("right1");
+            if (windowsize < 440) {
+                $("#navbarResponsive").css({"background-color": "#ffffff", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)","padding":"10px"});
+                // $('.nav-custom').css({"background-color": "#ffffff", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)"});
+                
+              }
+            else{
+              $("#navbarResponsive").css({"background-color": "transparent","padding":"10px"});
+
+            }
+        });
+    
+    </script>
+    <script>
+        window.onscroll = function() {
+          growShrinkLogo()
+        };
+        
+        function growShrinkLogo() {
+          var Logo = document.getElementById("Logo")
+          var clr = document.getElementById("myNavbar")
+          var txt = document.getElementById("txt")
+          // var txt1 = document.getElementById("txt1")
+          if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+            Logo.style.width = '50px';
+            Logo.style.height = '50px';
+            txt.style.color='#0D03F8';
+            txt.style.textShadow='3px 6px 6px  rgba(0,0,0,.3)';
+  
+            txt.style.fontWeight='600';
+            clr.classList.add("nav-colored");
+            clr.classList.remove("nav-custom");
+            // txt1.style.color = '#000'
+            
+          } else {
+            Logo.style.width = '60px';
+            Logo.style.height = '60px';
+            txt.style.color='#0D03F8'
+            clr.classList.add("nav-custom");
+            clr.classList.remove("nav-colored");
+            
+          }
+        }
+        </script>
 </body>
 </html>
