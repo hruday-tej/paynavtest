@@ -11,11 +11,42 @@
     margin-left: 90px;
     font-family: 'Dosis', sans-serif;
 }
+@media(max-width: 768px){
+    .section-heading-l {
+        margin-bottom: 1rem;
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 4.2rem;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        text-align: left;
+        color: rgba(0,0,0,.6);
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+    }
+}
 
 .section-content-l {
     margin-left: 110px;
     margin-top: 30px;
     
+}
+@media(max-width:768px){
+    .section-content-l {
+        margin-left: 20px;
+        align-items: center;
+        margin-top: 30px; 
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;    
+    }
 }
 
 .section-description-l li {
@@ -26,6 +57,17 @@
     font-size: 20px;
     font-weight: 600;
     font-family: 'roboto', sans-serif;
+}
+@media(max-width:768px){
+    .section-description-l li {
+        vertical-align: middle;
+        background: url("../images/tick.png") no-repeat 0;
+        padding: 1rem 0 1rem 3.5rem;
+        list-style: none;
+        font-size: 13px !important;
+        font-weight: 600;
+        font-family: 'roboto', sans-serif;
+    }
 }
 
 
@@ -43,11 +85,39 @@
     margin-left: 50px;
     font-family: 'Dosis', sans-serif;
 }
+@media(max-width:768px){
+    .section-heading-r {
+        margin-bottom: 1rem;
+        font-weight: 600;
+        font-size: 2.5rem;
+        margin-top: 20px;
+        line-height: 4.2rem;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        text-align: left;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: rgba(0,0,0,.6);
+        font-family: 'Dosis', sans-serif;
+    }
+}
 
 .section-content-r {
    
     margin-left: 0px;
     margin-top: 30px;
+}
+@media(max-width:768px){
+    .section-content-r{
+        
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .section-description-r li {
@@ -59,6 +129,19 @@
     font-weight: 600;
     margin-left: 100px;
     font-family: 'roboto', sans-serif;
+}
+@media(max-width:768px){
+    .section-description-r li{
+        vertical-align: middle;
+        background: url("../images/tick.png") no-repeat 0;
+        padding: 1rem 0 1rem 3.5rem;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 13px !important;
+        font-weight: 600;
+        font-family: 'roboto', sans-serif;
+    }
 }
 
 .centerTest {
@@ -93,3 +176,4 @@
         margin-left: 150px;
     }
 }
+

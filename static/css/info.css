@@ -29,25 +29,15 @@ html, body{
     width: auto;
     position: absolute;
 }
-    
-.left1{
-    order: 2;
-}
-.right1{
-    order: 1;
-}
 
-
-
-.my-container{
-    border: 1px solid green;
+.img-cust{
+     height:43rem ;
+     position:relative;
+     right: 0; 
+     float: Right;
 }
-.my-row{
-    
-    border: 3px solid red;
-    height: 800px;
-}
-
-.my-col{
-    border: 3px dotted blue;
+@media (max-width:768px){
+    .img-cust{
+        height: 30rem;
+    }
 }
