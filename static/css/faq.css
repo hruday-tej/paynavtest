@@ -84,6 +84,10 @@
     color: rgba(0,0,0,.9);
 }
 
+.card-header {
+    background: #fff !important;
+}
+
 .card-body{
     font-size: 20px !important;
     text-align: justify;
