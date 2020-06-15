@@ -36,6 +36,15 @@ nav{
 .nav-custom{
     background-color: transparent !important;
 }
+.navbar-nav li{
+
+}
+@media(max-width:768px){
+    .navbar-nav li{
+        margin-top: 10px;
+        text-align: center;
+    }
+}
 
 
 .nav-colored{
@@ -55,6 +64,17 @@ nav{
     font-size: 15px;
 }
 
+
+#Logo{
+    margin-left: 150px;
+}
+@media (max-width: 768px){
+    #Logo{
+        margin-left: 0px;
+    }
+}
+
+
 .active-dark{
     background: #000;
     color: #fff;
@@ -66,3 +86,4 @@ nav{
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
 }
+

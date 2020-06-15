@@ -37,7 +37,7 @@
 
         <div class="container-fluid nav-custom" >
           <a class="navbar-brand" href="#">
-            <img src="static/images/PayNav_logo.png" class="nav-header-img-custom" id="Logo" style="margin-left: 70px;" alt="Logo Here"></a>
+            <img src="static/images/PayNav_logo.png" class="nav-header-img-custom" id="Logo" alt="Logo Here"></a>
           <a href="#" class="navbar-brand ml-4">
             <h2 id="txt"  style="font-family: Asap, Helvetica, sans-serif; color: #0D03F8; text-shadow: 3px 6px 6px  rgba(0,0,0,.3); font-weight: 600;" >PayNav</h2>
           </a> 
@@ -207,12 +207,14 @@
             var l = document.getElementById("left1");
             var r = odcument.getElementById("right1");
             if (windowsize < 440) {
-                $("#navbarResponsive").css({"background-color": "#ffffff", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)","padding":"10px"});
+                $("#navbarResponsive").css({"background-color": "white", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)","padding":"10px"});
                 // $('.nav-custom').css({"background-color": "#ffffff", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)"});
                 
               }
             else{
-              $("#navbarResponsive").css({"background-color": "transparent","padding":"10px"});
+              // $("#navbarResponsive").css({"background-color": "transparent","padding":"10px"});
+              $("#navbarResponsive").css({"background-color": "white", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)","padding":"10px"});
+
 
             }
         });
