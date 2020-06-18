@@ -1,0 +1,77 @@
+.mob-screen{
+    height: 40rem;
+    margin-top: 100px;
+    float: left;
+    left: 0;
+}
+@media(max-width:768px){
+    .mob-screen{
+        display: none;
+    }
+}
+
+.abt-us-sec-head{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 100px;
+}
+@media(max-width:768px){
+    .abt-us-sec-head{
+        display: none;
+    }
+}
+
+.abt-us-sec-body{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: -200px;
+}
+@media(max-width:768px){
+    .abt-us-sec-body{
+        display: none;
+    }
+}
+
+.home-dwn{
+    height: 2.5rem;
+    margin-left: 200px;
+    margin-top: -90px;
+    
+}
+@media(max-width:768px){
+    .home-dwn{
+        display: none;
+    }
+}
+
+.download-opts{
+    margin-top: -130px;
+    float: right;
+    margin-right: 120px;
+}
+@media(max-width:768px){
+    .download-opts{
+        display: none;
+    }
+}
+
+.dwnld{
+    
+    height: 3rem;
+    width: 10rem;
+    margin-right: 100px;
+}
+
+.hidden-button{
+    display:none;
+    margin-top: 310px;
+}
+@media(max-width:768px){
+    .hidden-button{
+        display: block;
+
+    }
+}

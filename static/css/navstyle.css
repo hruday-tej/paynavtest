@@ -87,3 +87,30 @@ nav{
     filter: drop-shadow(5px 5px 5px #222);
 }
 
+.patner-btn{
+    border: #696969 2px solid;
+    width: fit-content;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+.mob{
+    display: none;
+}
+@media(max-width:768px){
+    .mob{
+        display: inline-block;
+    }
+}
+
+.mob-inv{
+    display: inline-block;
+}
+@media(max-width:768px){
+    .mob-inv{
+        display: none;
+    }
+}

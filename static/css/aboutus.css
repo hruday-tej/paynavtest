@@ -1,0 +1,210 @@
+.abtus-banner{
+    position: relative;
+    min-height: 100vh;
+    background: url("../images/aboutus/bg.png") ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+@media(max-width:768px){
+    .abtus-banner{
+        background: url("../images/aboutus/mob-bg.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.mission-wrap{
+    padding-left: 10rem;
+    position: absolute;
+    bottom: 23rem;
+}
+@media(max-height:768px){
+    .mission-wrap{
+        display: none;
+    }
+}
+
+.section-heading-abt{
+    font-weight: 700;
+    color: #696969;
+    font-size: 3rem;
+
+}
+@media(max-width:768px){
+    .section-heading-abt{
+        font-size: 2rem;
+        text-align: center;
+        margin-right: 20px;
+    }
+}
+
+
+.highlightme-abt{
+    color: #473DE7;
+}
+
+.story-header{
+    float: right;
+    margin-right: 10px;
+}
+
+.para{
+    margin-top: 40px;
+    font-weight: 500;
+    text-align: justify;
+    color: #696969;
+    font-size: 1.25rem;
+}
+@media(max-width:768px){
+    .para{
+        font-size: 0.75rem;
+    }
+}
+
+.middle-heading{
+    margin-top: 100px;
+    font-weight: 700;
+    color: #696969;
+    font-size: 3rem;
+}
+@media(max-width:768px){
+    .middle-heading{
+        font-size: 1.75rem;
+    }
+}
+
+.cust-abt-img{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+.cust-abt-img-seperator{
+    width: auto;
+    margin: 0 auto;
+}
+.qual{
+    font-size: 13px;
+    text-align: left;
+    margin-top: 15px;
+}
+.nickname{
+    color: #473DE7;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.card{
+    border-radius: 15px !important;
+    
+}
+
+.abtus-img-left{
+    float: left;
+    left: 0;
+    height: 42rem !important;
+}
+@media(max-width:768px){
+    .abtus-img-left{
+        height: 25rem !important;
+    }
+}
+
+.abtus-img-soop{
+    height: 20rem !important;
+    margin: 0 auto;
+    
+}
+@media(max-width:768px){
+    .abtus-img-soop{
+        height: 10rem !important;
+    }
+}
+
+
+
+
+
+
+.sec-head{
+    font-weight: 700; 
+    font-size: 1.25rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.sec-body{
+    font-weight: 600;
+    font-size: 1rem;
+    margin:0 auto;
+    margin-top: 5px;
+}
+
+
+
+.abtus-road{
+    height: 10rem;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.journey-header-right{
+    font-size: 2.75rem;
+    color: #696969;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.journey-header-left{
+    font-size: 2.75rem;
+    color: #696969;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+@media(min-width:768px){
+    .journey-header-left{
+        margin-left: -70px;
+    }
+}
+.abtus-img-right{
+
+    float: right;
+    right: 0;
+    height: 37rem !important;
+
+}
+@media(max-width:768px){
+    .abtus-img-right{
+        height: 25rem !important;   
+    }
+}
+
+.sup-container{
+    margin-top: 60px;
+    
+}
+@media(min-width:768px){
+    .sup-container{
+        margin-left: -70px;
+    }
+}
+
+.support{
+    height: 15rem !important;
+}
+
+.app-supp{
+    margin-top: 250px;
+}
+@media(max-width:768px){
+    .app-supp{
+        margin-top: 30px;
+    }
+}

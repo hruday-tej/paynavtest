@@ -1,0 +1,32 @@
+.career-first-page{
+    position: relative;
+    min-height: 100vh;
+    background: url("../images/career-main.png") ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin-top: 150px;
+}
+@media(max-width:768px){
+    .career-first-page{
+        background: url("../images/career-mob.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        margin-top: 100px;
+    }
+}
+
+
+body{
+    background: #4940E2;
+}
+@media(max-width:768px){
+    body{
+        background: #fff;
+    }
+}
