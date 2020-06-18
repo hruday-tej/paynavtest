@@ -30,9 +30,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mallanna&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 
     <!-- <script src="static/js/button.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get patch fixes within a minor version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get a specific version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     
 </head>
 <body >
@@ -49,32 +64,27 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" style="background-color: white;" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
-    <div class="collapse navbar-collapse"  id="navbarResponsive">
+      <div class="collapse navbar-collapse"  id="navbarResponsive">
 
         <ul class="navbar-nav ml-auto ">
 
           <li class="nav-item active mr-3 "style="vertical-align:middle">
-            <!-- <a href="#" class="nav-link " id="txt1" style="color: #fff;">Home</a> -->
           </li>
           <li class="nav-item mr-3">
             <a href="aboutus.html" class="nav-link " id="txt2" style="color: #fff;">About</a>
           </li>
           <li class="nav-item mr-3">
-            <a href="#" class="nav-link " id="txt3" style="color: #fff;">Features</a>
+            <a data-scroll href="#features" class="nav-link " id="txt3" style="color: #fff;">Features</a>
           </li>
           <li class="nav-item mr-3">
             <a href="contactus.html" class="nav-link " id="txt4" style="color: #fff;">Contact Us</a>
           </li>
           <li class="nav-item mr-3">
-            <a href="#" class="nav-link " id="txt5" style="color: #fff;">Sign In</a>
+            <a href="#" class="nav-link active-dark" id="txt5" style="color: #fff;">Sign In</a>
           </li>
-          
-
         </ul>
-
       </div>
     </div>
-
   </nav>
      
 
@@ -125,7 +135,7 @@
      
     </section>
     
-    <div class="wrapper" >
+    <div class="wrapper" id="features">
 
       <!-- BODY CONTENT -->
       <div class="container-fluid " style="margin: 0rem; padding: 0rem;">
@@ -133,11 +143,11 @@
         <div class="row  justify-content-center align-items-center ">
 
 
-          <div class="col-sm-6 order-1 order-lg-2"  id="right1">           
+          <div data-aos="flip-up" data-aos-anchor-placement="center-bottom" class="col-sm-6 order-1 order-lg-2"  id="right1">           
             <div class="imgr"> <img src="static/images/first.png" class="img-fluid img-cust" /></div>            
           </div> 
 
-          <div class="col-sm-6 order-2 order-lg-1" id="left1">
+          <div data-aos="fade-left" data-aos-anchor-placement="center-bottom"  class="col-sm-6 order-2 order-lg-1" id="left1">
             <div class="section-heading-l">
               <span>Hey There!<br> Welcome to <span class="highlightme">PayNav</span></span>
             </div>
@@ -164,11 +174,11 @@
         </div>          
         <!-- PAGE 2 -->
         <div class="row  justify-content-center align-items-center">
-          <div class="col-sm-6 ">
+          <div data-aos="flip-down" data-aos-anchor-placement="center-bottom" class="col-sm-6 ">
               <div class="imgl"> <img src="static/images/second.png"  class="img-fluid img-cust" style=" position:relative;left: 0; float: Left;"/></div>         
           </div>
-          <div class="col-sm-6 ">
-            <div class="section-heading-r">
+          <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" class="col-sm-6 ">
+            <div  class="section-heading-r" >
               <span>No more awkward<br> moments of  <span class="highlightme">Reminding</span></span>
             </div>
             <div class="section-content-r">
@@ -192,12 +202,12 @@
         <!-- PAGE 3 -->
         <div class="row  justify-content-center align-items-center">
 
-          <div class="col-sm-6 order-1 order-lg-2">            
+          <div data-aos="flip-up" data-aos-anchor-placement="center-bottom" class="col-sm-6 order-1 order-lg-2">            
             <div class="imgr"> <img src="static/images/third.png" class="img-fluid img-cust" style=" position:relative;right: 0; float: Right;"/></div>            
           </div>  
 
 
-          <div class="col-sm-6 order-2 order-lg-1">
+          <div data-aos="fade-left" data-aos-anchor-placement="center-bottom"  class="col-sm-6 order-2 order-lg-1">
             <div class="section-heading-l">
               <span><span class="highlightme">Easy </span> to use</span>
             </div>
@@ -222,12 +232,12 @@
         </div>        
         <!-- PAGE 4 -->
         <div class="row  justify-content-center align-items-center">
-          <div class="col-sm-6 ">
+          <div data-aos="flip-down" data-aos-anchor-placement="center-bottom" class="col-sm-6 ">
               <div class="imgl"> <img src="static/images/fourth.png" class="img-fluid img-cust" style=" position:relative;left: 0; float: Left;"/></div>         
           </div>
-          <div class="col-sm-6 ">
+          <div data-aos="fade-right" data-aos-anchor-placement="center-bottom"  class="col-sm-6 ">
             <div class="section-heading-r">
-              <span>You'r <span class="highlightme">Safety & Security </span><br> Is our topmost Priority  </span>
+              <span> <span class="highlightme">Safe </span>& Secure </span>
             </div>
             <div class="section-content-r">
               <ul class="section-description-r">
@@ -256,15 +266,15 @@
 
 
       <div class="card container border rounded-10 shadow p-3 mb-5 bg-white rounded" style="margin-top: 30px ;padding: 30px; border-radius: 20px !important;">
-        <div class="card-title justify-content-center centerTest"><span ><span class="highlightme" style="font-weight: 600; font-size: 50px; text-align: center;">Customer Reviews<br></span></span>
+        <div class="card-title justify-content-center centerTest"><span ><span class="highlightme" style="font-weight: 600; font-size: 50px; text-align: center;">User Reviews<br></span></span>
 
-        <span ><span class="highlightme" style="font-weight: 600;color: rgba(0,0,0,.6);font-size: 25px; text-align: center;">What our customers are saying ...<br><br></span></span></div>
+        <span ><span class="highlightme" style="font-weight: 600;color: rgba(0,0,0,.6);font-size: 25px; text-align: center;">What our users are saying ...<br><br></span></span></div>
         <div class="row">
 
           <div class="col-sm-4">
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
+            <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
               <img src="static/images/invertedgreen.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
-              <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; justify-content: stretch;">
+              <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; text-align: justify; font-weight: 600;">
                 <!-- <h5 class="card-title">Welcome Customers</h5> -->
                 <p class="card-text">Very helpful for managing all my personal lending/borrowing with friends and family. There are many facilities available in this app like online ledger, automated payback reminder,E-Sign etc but the main thing is the direct real time transaction from my upi id to my friends upi.</p>
               </div>
@@ -273,9 +283,9 @@
           </div>
 
           <div class="col-sm-4">
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
               <img src="static/images/invertedblue.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
-              <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; justify-content: stretch;">
+              <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; text-align: justify; font-weight: 600;">
                 <!-- <h5 class="card-title">Welcome Customers</h5> -->
                 <p class="card-text" >Problem solving app for many money lending between friends, many people will not meet their obligations when it comes to money but using this app surely they will😅. Thanks to Paynav for this amazing "meet your obligations" app.</p>
               </div>
@@ -284,9 +294,9 @@
           </div>
 
           <div class="col-sm-4">
-            <div class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
+            <div data-aos="fade-left" data-aos-anchor-placement="center-bottom" class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
               <img src="static/images/invertedpurple.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
-              <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; justify-content: stretch;">
+              <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; text-align: justify; font-weight: 600;">
                 <p class="card-text">This app is great for all people, especially for people with personal financial intelligence. It keeps track of the money you lent. Good to have my money back same time have my friendships tight. One word Hassle free.</p>
               </div>
               <img class="card-img-bottom" src="static/images/review3.png" alt="Card image cap">
@@ -315,7 +325,7 @@
                 </div>
               </div><div class="col-md-4 links-container">
               <div class="footer-item footer-link">
-                <a href="#">Team</a>
+                <a href="aboutus.html#team">Team</a>
               </div>
               <div class="footer-item footer-link">
                 <a href="careers.html">Careers</a>
@@ -424,7 +434,7 @@
           txt2.style.color = '#000'
           txt3.style.color = '#000'
           txt4.style.color = '#000'
-          txt5.style.color = '#000'
+          txt5.style.color = '#fff'
         } else {
           Logo.style.width = '60px';
           Logo.style.height = '60px';
@@ -445,12 +455,12 @@
             var l = document.getElementById("left1");
             var r = odcument.getElementById("right1");
             if (windowsize < 440) {
-                $("#navbarResponsive").css({"background-color": "#ffffff", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)","padding":"10px"});
+                // $("#navbarResponsive").css({"background-color": "#ffffff", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)","padding":"10px"});
                 // $('.nav-custom').css({"background-color": "#ffffff", "-webkit-box-shadow": "0px 1px 4px 0px rgba(180, 180, 180, 0.5)", "-moz-box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)", "box-shadow": "0px 1px 4px 0px rgba(180,180,180, 0.5)"});
                 
               }
             else{
-              $("#navbarResponsive").css({"background-color": "transparent","padding":"10px"});
+              // $("#navbarResponsive").css({"background-color": "transparent","padding":"10px"});
 
             }
         });
@@ -461,5 +471,25 @@
       var top = document.getElementsByClassName("to")
       var bottom = document.getElementsByClassName("boo")
     </script>
+
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        // Function. Custom easing pattern
+        // If this is set to anything other than null, will override the easing option above
+        customEasing: function (time) {
+
+            // return <your formulate with time as a multiplier>
+
+            // Example: easeInOut Quad
+            return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+          }
+    });
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

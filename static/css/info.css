@@ -1,6 +1,6 @@
 .highlightme{
     color: #473DE7;
-    font-family: 'Dosis', sans-serif;
+    
 }
 
 html, body{
@@ -40,4 +40,8 @@ html, body{
     .img-cust{
         height: 30rem;
     }
+}
+
+*{
+    font-family: 'Mallanna', sans-serif;
 }

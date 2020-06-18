@@ -9,7 +9,7 @@
     text-align: left;
     color: rgba(0,0,0,.6);
     margin-left: 90px;
-    font-family: 'Dosis', sans-serif;
+   
 }
 @media(max-width: 768px){
     .section-heading-l {
@@ -27,7 +27,6 @@
         width: fit-content;
         text-align: left;
         color: rgba(0,0,0,.6);
-        font-family: 'Dosis', sans-serif;
         text-align: center;
     }
 }
@@ -55,10 +54,10 @@
     background: url("../images/tick.png") no-repeat 0;
     padding: 1rem 0 1rem 3.5rem;
     list-style: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #696969;
-    font-family: 'roboto', sans-serif;
+    
 }
 @media(max-width:768px){
     .section-description-l li {
@@ -68,7 +67,7 @@
         list-style: none;
         font-size: 13px !important;
         font-weight: 600;
-        font-family: 'roboto', sans-serif;
+        
     }
 }
 
@@ -85,7 +84,7 @@
     color: rgba(0,0,0,.6);
     margin-right: 0px;
     margin-left: 50px;
-    font-family: 'Dosis', sans-serif;
+   
 }
 @media(max-width:768px){
     .section-heading-r {
@@ -103,7 +102,7 @@
         margin-right: auto;
         text-align: center;
         color: rgba(0,0,0,.6);
-        font-family: 'Dosis', sans-serif;
+       
     }
 }
 
@@ -127,11 +126,11 @@
     background: url("../images/tick.png") no-repeat 0;
     padding: 1rem 0 1rem 3.5rem;
     list-style: none;
-    font-size: 20px;
+    font-size: 18px;
     color: #696969;
     font-weight: 600;
     margin-left: 100px;
-    font-family: 'roboto', sans-serif;
+    
 }
 @media(max-width:768px){
     .section-description-r li{
@@ -143,7 +142,7 @@
         margin-right: 20px;
         font-size: 15px !important;
         font-weight: 600;
-        font-family: 'roboto', sans-serif;
+        
     }
 }
 

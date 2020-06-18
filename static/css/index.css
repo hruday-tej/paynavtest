@@ -27,7 +27,7 @@
     font-size: 1rem;
     color: #fff;
     margin-top: 20px;
-    margin-left: -200px;
+    margin-left: -150px;
 }
 @media(max-width:768px){
     .abt-us-sec-body{
@@ -37,8 +37,8 @@
 
 .home-dwn{
     height: 2.5rem;
-    margin-left: 200px;
-    margin-top: -90px;
+    margin-left: 250px;
+    margin-top: -70px;
     
 }
 @media(max-width:768px){

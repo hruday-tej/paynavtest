@@ -29,7 +29,9 @@
      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Montserrat&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Mallanna&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -86,7 +88,7 @@
               
 
               <div class="col-md-5 order-1 order-lg-3">
-                <div class="imgr"> <img src="static/images/contactus/contactus_side.png" class="img-fluid" style=" position:relative;right: 0; float: Right;margin-top: -50px;"/></div> 
+                <div class="imgr" data-aos="flip-down"> <img src="static/images/contactus/contactus_side.png" class="img-fluid" style=" position:relative;right: 0; float: Right;margin-top: -50px;"/></div> 
               </div>
 
               <div class="col-md-2 hidden-md hidden-sm hidden-xs order-2" style="@media (min-width: 768px) {
@@ -251,7 +253,10 @@
           }
         }
         </script>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     
 </body>
 </html>
