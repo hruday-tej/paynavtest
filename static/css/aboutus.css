@@ -1,5 +1,4 @@
-.abtus-banner{
-    position: relative;
+.aboutus-landing-page{
     min-height: 100vh;
     background: url("../images/aboutus/bg.png") ;
     -webkit-background-size: cover;
@@ -9,8 +8,8 @@
     background-position: center;
 }
 @media(max-width:768px){
-    .abtus-banner{
-        background: url("../images/aboutus/mob-bg.png");
+    .aboutus-landing-page{
+        background: url("../images/aboutus/mob-bg.png") ;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -19,19 +18,47 @@
     }
 }
 
-.mission-wrap{
-    padding-left: 10rem;
-    position: absolute;
-    bottom: 23rem;
+.mission{
+    margin-top: 200px;
 }
-@media(max-height:768px){
-    .mission-wrap{
-        display: none;
+@media(max-width:768px){
+    .mission{
+        margin-top: 130px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
-
+.mission-heading{
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+}
+@media(max-width:768px){
+    .mission-heading{
+        text-align: center;
+        font-size: 45px;
+        letter-spacing: 2px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.mission-content{
+    font-size: 20px;
+    font-weight: 600;    
+    color: white;
+    margin-top: 40px;
+}
+@media(max-width:768px){
+    .mission-content{
+        font-size: 15px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
 .section-heading-abt{
     font-weight: 700;
+    font-style: bold;
     color: #696969;
     font-size: 3rem;
 
@@ -44,6 +71,10 @@
     }
 }
 
+.abtus-container{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .highlightme-abt{
     color: #473DE7;
@@ -51,12 +82,41 @@
 
 .story-header{
     float: right;
-    margin-right: 10px;
+    margin-right: 90px;
+}
+@media(max-width:768px){
+    .story-header{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.justice{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+@media(max-width:768px){
+    .justice{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.actual-story{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+@media(max-width:768px){
+    .actual-story{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
 
 .para{
     margin-top: 40px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: justify;
     color: #696969;
     font-size: 1.25rem;
@@ -78,7 +138,69 @@
         font-size: 1.75rem;
     }
 }
-
+.team-wrapper{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.left-card{
+    margin-left: 50px;
+}
+@media(max-width:768px){
+    .left-card{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.right-card{
+    margin-right: 50px;
+}
+@media(max-width:768px){
+    .right-card{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.intermediate-row{
+    margin-top: 150px;
+}
+@media(max-width:768px){
+    .intermediate-row{
+        margin-top: 10px;
+    }
+}
+.bloop{
+    margin-top: 150px;
+}
+@media(max-width:768px){
+    .bloop{
+        margin-top: 20px;
+    }
+}
+.bloop1{
+    margin-bottom: 150px;
+}
+@media(max-width:768px){
+    .bloop1{
+        margin-bottom: 20px;
+    }
+}
+.card-title{
+    font-weight: 700 !important; 
+    color: black !important;
+}
+.card-body h6{
+    margin-top: 20px;
+    color: black;
+    font-weight: 500;
+}
+.about-image{
+    height: 35rem;
+}
+@media(max-width:768px){
+    .about-image{
+        height: 25rem;
+    }
+}
 .cust-abt-img{
     height: 150px;
     width: 150px;
@@ -197,7 +319,7 @@
 }
 
 .support{
-    height: 15rem !important;
+    height: 11rem !important;
 }
 
 .app-supp{
@@ -206,5 +328,33 @@
 @media(max-width:768px){
     .app-supp{
         margin-top: 30px;
+    }
+}
+
+.startup-support{
+    height: 5rem !important;
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bl{
+    margin-bottom: -100px;
+}
+@media(max-width:768px){
+    .bl{margin-bottom: 0px;}
+}
+.apply{
+    width: 17rem;
+    margin-top: -130px;
+    margin-right: 200px; 
+    margin-bottom: 150px;
+}
+@media(max-width:768px){
+    .apply{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 60px;
+        margin-top: 40px;
     }
 }

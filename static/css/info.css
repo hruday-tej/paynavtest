@@ -38,10 +38,10 @@ html, body{
 }
 @media (max-width:768px){
     .img-cust{
-        height: 30rem;
+        height: 38rem;
     }
 }
 
 *{
-    font-family: 'Mallanna', sans-serif;
+    font-family: 'Roboto'   ;
 }

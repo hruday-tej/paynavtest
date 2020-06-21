@@ -44,8 +44,8 @@
         margin-top: 30px; 
         display: block;
         margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;    
+        margin-left: 30px;
+        margin-right: 20px;    
     }
 }
 
@@ -57,6 +57,8 @@
     font-size: 18px;
     font-weight: 600;
     color: #696969;
+    margin-left: 30px;
+    margin-right: 20px;   
     
 }
 @media(max-width:768px){
@@ -130,6 +132,8 @@
     color: #696969;
     font-weight: 600;
     margin-left: 100px;
+    margin-left: 30px;
+    margin-right: 20px;     
     
 }
 @media(max-width:768px){
@@ -138,10 +142,11 @@
         background: url("../images/tick.png") no-repeat 0;
         padding: 1rem 0 1rem 3.5rem;
         list-style: none;
-        margin-left: 0px;
         margin-right: 20px;
         font-size: 15px !important;
         font-weight: 600;
+        margin-left: 30px;
+        margin-right: 20px;   
         
     }
 }

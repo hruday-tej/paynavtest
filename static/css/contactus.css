@@ -43,6 +43,11 @@
     text-align: left;
     color: rgba(0,0,0,.6);
 }
+@media(max-width:768px){
+    .section-heading{
+        display: none;
+    }
+}
 
 .lighter {
     color: rgba(0,0,0,.7);
@@ -121,4 +126,22 @@ p {
     width: 1px;
     margin: auto;
     background: rgb(246, 245, 245);
+}
+
+.onlymob{
+    display: none;
+}
+@media(max-width:768px){
+    .onlymob{
+        display: inline-block;
+    }
+}
+
+.mobinvi{
+    display: inline-block;
+}
+@media(max-width:768px){
+    .mobinvi{
+        display: none;
+    }
 }
