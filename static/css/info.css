@@ -2,11 +2,6 @@
     color: #473DE7;
     
 }
-@media(max-width:768px){
-    .highlightme{
-        font-size: 30px;
-    }
-}
 
 html, body{
     margin: 0px;
