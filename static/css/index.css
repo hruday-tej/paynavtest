@@ -74,42 +74,13 @@
     }
 }
 .landing-body{
-    font-weight: 600;
-    color:#fff;
+    display: none;
 
 }
-@media(max-width:320px){
+@media(min-width:768px){
     .landing-body{
-        display: none;
-        font-size: 13px;
-        margin-left: auto;
-        margin-right: auto;
         font-weight: 600;
-        text-align: center;
-        padding-top: 50px;
-    }
-}
-}
-@media(max-width:768px){
-    .landing-body{
-        display: none;
-        font-size: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        font-weight: 600;
-        text-align: center;
-        padding-top: 50px;
-    }
-}
-@media(max-width:414px){
-    .landing-body{
-        display: none;
-        font-size: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        font-weight: 600;
-        text-align: center;
-        padding-top: 30px;
+    color:#fff;
     }
 }
 .landing-download-button{
