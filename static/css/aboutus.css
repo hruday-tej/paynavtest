@@ -196,9 +196,14 @@
 .about-image{
     height: 35rem;
 }
-@media(max-width:768px){
+@media(max-width:1024px){
     .about-image{
         height: 25rem;
+    }
+}
+@media(max-width:768px){
+    .about-image{
+        height: 18rem;
     }
 }
 .cust-abt-img{
@@ -235,6 +240,7 @@
 @media(max-width:768px){
     .abtus-img-left{
         height: 25rem !important;
+        margin-top: 40px;
     }
 }
 

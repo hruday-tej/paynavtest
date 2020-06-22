@@ -60,6 +60,7 @@
 }
 .faq-nav .nav-link.active, .faq-nav .nav-link:hover {
     background-color: #fff;
+    color: black !important;
     box-shadow: 0 0.01rem 0.16rem rgba(0,0,0,.3);
 }
 

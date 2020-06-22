@@ -128,7 +128,7 @@ nav{
         margin-left: 0px;
     }
 }
-
+/* 
 nav{
     display: flex;
     justify-content: space-around;
@@ -136,7 +136,7 @@ nav{
     min-height: 8vh;
     background: #92d333;
 
-}
+} */
 
 .logo{
     color: white;

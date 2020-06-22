@@ -182,3 +182,7 @@
         font-size: 14px !important;
     }
 }
+
+html{
+    scroll-behavior: smooth;
+}
