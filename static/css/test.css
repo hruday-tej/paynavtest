@@ -4,12 +4,13 @@ body{
 } */
 
 .custom-brand-logo{
-    width: 15rem !important;
+    width: 12rem !important;
     margin-left: 150px;
+    padding-top: 10px;
 }
 @media(max-width:768px){
     .custom-brand-logo{
-        width: 8rem !important;
+        width: 7rem !important;
         margin-left: 0px;
     }
 }
@@ -35,7 +36,10 @@ nav{
   background: transparent;
   height: 80px;
   width: 100%;
-  padding-top: 15px;
+  padding-top: 10px;
+  /* display: flex;            */
+  /* align-items: center;        */
+  /* justify-content: center;  */
 }
 @media(max-width:768px){
     nav{
@@ -296,4 +300,23 @@ section{
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
+}
+
+.custom-light-border{
+  border: solid 2px #fff;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    border-radius: 40px;
+    color: white;
+}
+@media(max-width:768px){
+  .custom-light-border{
+      color: black;
+      border: 0px solid transparent;
+        background: transparent;
+        -webkit-box-shadow: 0 0 0 0 #fff;
+        -moz-box-shadow: 0 0 0 0 #fff;
+        box-shadow: 0 0 0 0 #fff;
+  }
 }
