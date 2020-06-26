@@ -1,19 +1,8 @@
-const navSlide = ()=> {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-
-    burger.addEventListener('click',()=>
-    {
-        nav.classList.toggle('nav-active');
-    });
-}
-
-navSlide();
-
-// (function($) {
-//     $(function() {
-//       $('.toggle-overlay').click(function() {
-//         $('aside').toggleClass('open');
-//       });
-//     });
-//   })(jQuery);
+$('#nav').onePageNav({
+	currentClass: 'active',
+	changeHash: false,
+	scrollSpeed: 750,
+	scrollThreshold: 0.5,
+	filter: '',
+	easing: 'swing'
+});

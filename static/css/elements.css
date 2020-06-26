@@ -1,22 +1,22 @@
 .section-heading-l {
     margin-bottom: 1rem;
-    font-weight: 600;
-    font-size: 3.5rem;
+    font-weight: 700 !important;
+    font-size: 45px;
     line-height: 4.2rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     text-align: left;
     color: rgba(0,0,0,.6);
-    margin-left: 90px;
+    margin-left: 120px;
    
 }
 @media(max-width: 768px){
     .section-heading-l {
         margin-bottom: 1rem;
         font-weight: 600;
-        font-size: 2.5rem;
-        line-height: 4.2rem;
+        font-size: 2rem;
+        line-height: 3.2rem;
         display: block;
         margin-top: 20px;
         margin-left: auto;
@@ -32,43 +32,69 @@
 }
 
 .section-content-l {
-    margin-left: 110px;
+    margin-left: 80px;
     margin-top: 30px;
     color: #696969;
     
 }
 @media(max-width:768px){
     .section-content-l {
-        margin-left: 20px;
-        align-items: center;
-        margin-top: 30px; 
-        display: block;
-        margin-top: 20px;
-        margin-left: 30px;
-        margin-right: 20px;    
+        margin-left: 20px !important;
+        align-items: center !important;
+        margin-top: 30px !important; 
+        display: block !important;
+        margin-top: 20px !important;
+        margin-left: 30px !important;
+        margin-right: 20px !important;    
     }
 }
-
-.section-description-l li {
-    vertical-align: middle;
-    background: url("../images/tick.png") no-repeat 0;
-    padding: 1rem 0 1rem 3.5rem;
-    list-style: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: #696969;
-    margin-left: 30px;
-    margin-right: 20px;   
+.section-description-l{
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+    background: #fff;
+    top: auto !important;
+    left: auto !important;
+    text-align: left !important;
+    margin-left: -30px !important;
+    margin-right: 20px !important;
+    /* transition: all .5s; */
+}
+.section-description-r{
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+    background: #fff;
+    top: auto !important;
+    left: auto !important;
+    text-align: left !important;
+    margin-left: -30px !important;
+    margin-right: 20px !important;
+    /* transition: all .5s; */
+}
+.section-description-l .index-li {
+    vertical-align: middle !important;
+    background: url("../images/tick.png") no-repeat 0 !important;
+    padding: 1rem 0 1rem 3.5rem !important;
+    list-style: none !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #696969 !important;
+    margin-left: 30px !important;
+    margin-right: 20px !important;   
     
 }
 @media(max-width:768px){
-    .section-description-l li {
-        vertical-align: middle;
-        background: url("../images/tick.png") no-repeat 0;
-        padding: 1rem 0 1rem 3.5rem;
-        list-style: none;
-        font-size: 13px !important;
-        font-weight: 600;
+    .section-description-l .index-li {
+        vertical-align: middle !important;
+        background: url("../images/tick.png") no-repeat 0 !important;
+        padding: 1rem 0 1rem 3.5rem !important;
+        list-style: none !important;
+        margin-right: 20px !important;
+        font-size: 15px  !important;
+        font-weight: 600 !important;
+        margin-left: 00px !important;
+        margin-right: 0px !important;   
         
     }
 }
@@ -76,8 +102,8 @@
 
 .section-heading-r {
     margin-bottom: 1rem;
-    font-weight: 600;
-    font-size: 3.5rem;
+    font-weight: 700 !important;
+    font-size: 45px;
     line-height: 4.2rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -92,9 +118,9 @@
     .section-heading-r {
         margin-bottom: 1rem;
         font-weight: 600;
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top: 20px;
-        line-height: 4.2rem;
+        line-height: 3.2rem;
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
@@ -110,7 +136,7 @@
 
 .section-content-r {
    
-    margin-left: 0px;
+    margin-left: 10px;
     margin-top: 30px;
 }
 @media(max-width:768px){
@@ -123,30 +149,30 @@
     }
 }
 
-.section-description-r li {
-    vertical-align: middle;
-    background: url("../images/tick.png") no-repeat 0;
-    padding: 1rem 0 1rem 3.5rem;
-    list-style: none;
-    font-size: 18px;
-    color: #696969;
-    font-weight: 600;
-    margin-left: 100px;
-    margin-left: 30px;
-    margin-right: 20px;     
+.section-description-r .index-li {
+    vertical-align: middle !important;
+    background: url("../images/tick.png") no-repeat 0 !important;
+    padding: 1rem 0 1rem 3.5rem !important;
+    list-style: none !important;
+    font-size: 18px !important;
+    color: #696969 !important;
+    font-weight: 600 !important;
+    margin-left: 100px !important;
+    margin-left: 30px !important;
+    margin-right: 20px !important;     
     
 }
 @media(max-width:768px){
-    .section-description-r li{
-        vertical-align: middle;
-        background: url("../images/tick.png") no-repeat 0;
-        padding: 1rem 0 1rem 3.5rem;
-        list-style: none;
-        margin-right: 20px;
-        font-size: 15px !important;
-        font-weight: 600;
-        margin-left: 30px;
-        margin-right: 20px;   
+    .section-description-r .index-li{
+        vertical-align: middle !important;
+        background: url("../images/tick.png") no-repeat 0 !important;
+        padding: 1rem 0 1rem 3.5rem !important;
+        list-style: none !important;
+        margin-right: 20px !important;
+        font-size: 15px  !important;
+        font-weight: 600 !important;
+        margin-left: 30px !important;
+        margin-right: 20px !important;   
         
     }
 }
@@ -168,7 +194,7 @@
     margin: 10px;
 }
 .my-plus {
-    color: #006800;;
+    color: #006800;
     background: white;
     border-radius: 50%;
     font-size: 32px;

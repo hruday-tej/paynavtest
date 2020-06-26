@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PayNav -Careers</title>
+    <title>India’s first friends and family loan app</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet"  href="static/css/style.css" type="text/css">
@@ -31,18 +31,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mallanna&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="static/images/favicon.png" />
 </head>
 <body>
-  <nav class="fixed-top bg-light">
+  <nav class="fixed-top bg">
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
-      <img src="static/images/toggle-img.png" class="brand-img" alt="">
+        <i class="fa fa-bars fa-thin" aria-hidden="true" style="color: #473DE7"></i>
     </label>
     <label class="logo">
 
-      <!-- <img class="hidden-mobile custom-brand-logo" src="static/images/Logos/white.png" border="0" alt="" id="one"/> -->
-      <a href="index.html"><img class="hidden-mobile custom-brand-logo" src="static/images/Logos/blue.png" border="0" alt=""  style="margin-left: 100px !important;" id="two"/></a>
-      <a href="index.html"><img class="hidden-desktop custom-brand-logo" src="static/images/Logos/blue.png" border="0" alt="" /></a>
+        <a href="index.html"><img class="hidden-mobile custom-brand-logo" src="static/images/Logos/white.png" border="0" alt="" id="one"/></a>
+        <a href="index.html"><img class="hidden-mobile custom-brand-logo" src="static/images/Logos/blue.png" border="0" alt="" style="display: none;" id="two"/></a>
+        <a href="index.html"><img class="hidden-desktop custom-brand-logo" src="static/images/Logos/blue.png" border="0" alt=""/></a>
       <a href="https://play.google.com/store/apps/details?id=co.paynav.app"><img src="static/images/nav-dwnld.png" class="navdown" style="display: none;" id="nav-dwn" alt=""></a>
       <!-- <picture class="logoimage" >
         <source media="(min-width: 900px)" id="logoimage" srcset="static/images/Logos/white.png">
@@ -52,13 +54,20 @@
     
   </label>
     
-    <ul>
-      <li><a href="aboutus.html" class="list-item hoverable" style="color: black;">About us</a></li>
-      <li><a href="#features" class="list-item hoverable" style="color: black;">Features</a></li>
-      <li><a href="contactus.html" class="list-item hoverable" style="color: black;">Contact us</a></li>
-      <li><a href="#" class="list-item hoverable" style="color: black;" id="signin">Sign In</a></li>
+    <ul id="menu">
+      <li ><a href="aboutus.html" class="list-item hoverable custom-list-item " id="abtus"><b>About us</b> </a></li>
+      <li ><a href="index.html#features" class="list-item hoverable custom-list-item"><b>Features</b> </a></li>
+      <li ><a href="contactus.html" class="list-item hoverable custom-list-item"><b>Contact us</b> </a></li>
+      <li ><a href="https://play.google.com/store/apps/details?id=co.paynav.app" class="list-item hoverable custom-list-item custom-dark" id="signin"><b>Sign In</b> </a></li>
     </ul>
 </nav>
+
+<div class="floating-container">
+  <!-- <span class="fab-label">Download</span> -->
+  <div class="floating-image-container">
+    <a href="https://play.google.com/store/apps/details?id=co.paynav.app" target="_blank"><img src="static/images/dwn.png" alt="" class="floating-image"></a>
+  </div>
+</div>
     <section class="career-first-page">
 
     </section>
@@ -70,36 +79,36 @@
           <div class="col-md-6 links-batch-container order-1 order-lg-2" id="second">
             <div class="col-md-4 links-container">
               <div class="footer-item footer-link">
-                <a href="index.html">Home</a>
+                <a style="text-decoration: none;" href="index.html">Home</a>
               </div>
                 <div class="footer-item footer-link">
-                  <a href="aboutus.html">About us</a>
+                  <a style="text-decoration: none;" href="aboutus.html">About </a>
                 </div>
                 <div class="footer-item footer-link">
-                  <a href="contactus.html">Contact us</a>
+                  <a style="text-decoration: none;" href="contactus.html">Contact </a>
                 </div>
               </div><div class="col-md-4 links-container">
               <div class="footer-item footer-link">
-                <a href="aboutus.html#team">Team</a>
+                <a style="text-decoration: none;" href="aboutus.html#team">Team</a>
               </div>
               <div class="footer-item footer-link">
-                <a href="careers.html">Careers</a>
+                <a style="text-decoration: none;" href="careers.html">Careers</a>
               </div>
               <div class="footer-item footer-link">
-                <a href="privacy.html" >Privacy policy</a>
-              </div><a href="patnerwithus.html"><img src="static/images/pat.png" class="patimg1" alt=""></a>
+                <a style="text-decoration: none;" href="privacy.html" >Privacy </a>
+              </div><a style="text-decoration: none;" href="patnerwithus.html"><img src="static/images/pat.png" class="patimg1" alt=""></a>
             </div><div class="col-md-4 links-container">
               <div class="footer-item footer-link">
-                <a href="faq.html">FAQs</a>
+                <a style="text-decoration: none;" href="faq.html">FAQs</a>
               </div>
               <div class="footer-item footer-link">
-                <a href="terms.html">Terms</a>
+                <a style="text-decoration: none;" href="terms.html">Terms</a>
               </div>
               <div class="footer-item footer-link">
-                <a href="consent.html">Consent</a>
+                <a style="text-decoration: none;" href="consent.html">Consent</a>
               </div>
-              <a href="patnerwithus.html"><img src="static/images/pat.png" class="patimg2" alt=""></a>
-              <a href="https://play.google.com/store/apps/details?id=co.paynav.app"><img src="static/images/google-home.png" class="img-thumbnail text-md-center"style="width: 160px; padding:0px;align-self: center; margin-top:30px" alt=""></a>
+              <a style="text-decoration: none;" href="patnerwithus.html"><img src="static/images/pat.png" class="patimg2" alt=""></a>
+              <a style="text-decoration: none;" href="https://play.google.com/store/apps/details?id=co.paynav.app"><img src="static/images/google-home.png" class="img-thumbnail text-md-center footer-download" alt=""></a>
   
               </div>
           </div>
@@ -112,10 +121,10 @@
             <div class="social-container">
               <div class="follow-us-on ">Follow us on</div>
               <div class="social-handles">
-                <span class="handle"><a href="https://instagram.com/paynav"><i class="fa fa-instagram fa-2x col-icon" aria-hidden="true"></i></a> </span>
-                <span class="handle"><a href="https://twitter.com/PayNavco"><i class="fa fa-twitter fa-2x col-icon" aria-hidden="true"></i> </a></span>
-                <span class="handle"><a href="https://linkedin.com/company/paynav"><i class="fa fa-linkedin fa-2x col-icon" aria-hidden="true"></i></a> </span>
-                <span class="handle"><a href="https://facebook.com/paynavco"><i class="fa fa-facebook fa-2x col-icon" aria-hidden="true"></i></a> </span>
+                <span class="handle"><a href="https://instagram.com/paynav" target="_blank"><i class="fa fa-instagram fa-2x col-icon" aria-hidden="true"></i></a> </span>
+                <span class="handle"><a href="https://twitter.com/PayNavco" target="_blank"><i class="fa fa-twitter fa-2x col-icon" aria-hidden="true"></i> </a></span>
+                <span class="handle"><a href="https://linkedin.com/company/paynav" target="_blank"><i class="fa fa-linkedin fa-2x col-icon" aria-hidden="true"></i></a> </span>
+                <span class="handle"><a href="https://facebook.com/paynavco" target="_blank"><i class="fa fa-facebook fa-2x col-icon" aria-hidden="true"></i></a> </span>
               </div>
             </div>
             <div class="logo-copyright-container">
@@ -128,7 +137,7 @@
                 </a>
               </div>
               <div class="footer-copyright">
-                <p>© 2020 PayNav Inc. All rights reserved.</p>
+                <p>© 2020 PayNav. All rights reserved.</p>
               </div>
             </div>    
           </div>        
@@ -142,13 +151,16 @@
 
     <script>
       var d = document.getElementById("nav-dwn");
-      var txt = document.getElementById('signin');
+      var umm = document.getElementById('signin');
+      var umm1 = document.getElementById('abtus');
   var width = $(window).width();
       if (width <= 480) {
         //code for mobile devices 
         d.style.display='inline-block';
+      //   umm.style.addClass('custom-dark-new');
+      umm1.style.color="#000 !important";
         $('.list-item').toggleClass('scrolled.mob', $(this).scrollTop() > 50);
-        txt.style.color = '#fff !important';
+      //   txt.style.color = '#000 !important';
   
       } else {
         //code for other devices
@@ -160,6 +172,50 @@
       }
   
       
+    </script>
+    <script>
+      $(function(){
+          var txt = document.getElementById('signin');
+          var txt1 = document.getElementById('abtus');
+          var img = document.getElementById('one');
+          var img2 = document.getElementById('two');
+          var width = $(window).width();
+          // img2.style.display='none';
+          if (width>480){
+
+                  $(window).scroll(function(){
+                  
+                      if($(this).scrollTop() > 5){
+                      // $('.top-fixed .logo .logoimage img').attr('src','static/images/Logos/blue.png');
+                      img.style.display='none';
+                      img2.style.display='block';
+                      txt.style.color = '#fff';
+
+                      }
+                      else{
+                      // $('.top-fixed .logo .logoimage img').attr('src','static/images/Logos/blue.png');
+                      img.style.display='block';
+                      img2.style.display='none';
+                      txt.style.color = '#fff';
+                      }
+                  })     
+              
+          }
+      })
+       
+    </script>
+      <script>
+          $('#check').on('click', function (e) {
+          $('#menu').toggleClass('expanded');
+          $('.checkbtn i').removeClass().addClass(
+              $('#menu.expanded').length ? 'fa fa-times fa-class' : 'fa fa-bars fa-class'
+          );
+      });
+        </script>
+      
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
 

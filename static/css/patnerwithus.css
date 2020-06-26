@@ -40,25 +40,37 @@
     }
 }
 
-.section-description-pat li {
-    vertical-align: middle;
-    background: url("../images/tick.png") no-repeat 0;
-    padding: 1rem 0 1rem 3.5rem;
-    list-style: none;
-    font-size: 20px;
-    font-weight: 600;
-    color: #696969;
-    font-family: 'roboto', sans-serif;
+.section-description-pat{
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+    background: #fff;
+    top: 0 !important;
+    left: 0 !important;
+    text-align: left !important;
+    transition: all 0s !important;
+}
+.section-description-pat .patner-list-item {
+    vertical-align: middle !important;
+    background: url("../images/tick.png") no-repeat 0 !important;
+    padding: 1rem 0 1rem 3.5rem !important;
+    list-style: none !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #696969 !important;
+    font-family: 'roboto', sans-serif !important;
 }
 @media(max-width:768px){
-    .section-description-pat li {
-        vertical-align: middle;
-        background: url("../images/tick.png") no-repeat 0;
-        padding: 1rem 0 1rem 3.5rem;
-        list-style: none;
-        font-size: 13px !important;
-        font-weight: 600;
-        font-family: 'roboto', sans-serif;
+    .section-description-pat .patner-list-item {
+        vertical-align: middle !important;
+        background: url("../images/tick.png") no-repeat 0 !important;
+        padding: 1rem 0 1rem 3.5rem !important;
+        list-style: none !important;
+        font-size: 15px !important ;
+        font-weight: 600 !important;
+        font-family: 'roboto', sans-serif !important;
+        margin-left: -10px !important;
+        margin-right: 25px !important;   
     }
 }
 

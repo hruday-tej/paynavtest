@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PayNav -Friendly Transactions</title>
+    <title>India’s first friends and family loan app</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet"  href="static/css/style.css" type="text/css">
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="static/css/footer.css" type="text/css">
   <link rel="stylesheet" href="static/css/contactus.css" type="text/css">  
   <link rel="stylesheet" href="static/css/index.css" type="text/css">
+  <link rel="stylesheet" href="static/css/aboutus.css">
   <!-- JS, Popper.js, and jQuery -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="static/css/test.css">
@@ -22,6 +23,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+  
 
   <!-- Font Families Only -->
   <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -31,17 +33,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mallanna&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> -->
+
+  <link rel="shortcut icon" type="image/png" href="static/images/favicon.png" />
 
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbur" data-offset="50">
 
 
 
-  <nav class="fixed-top bg">
+  <nav class="fixed-top bg " id="navbur">
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
-      <img src="static/images/toggle-img.png" class="brand-img" alt="">
+      <i class="fa fa-bars fa-thin" aria-hidden="true" style="color: #473DE7"></i>
+      <!-- <img src="static/images/toggle-img.png" class="brand-img" alt=""> -->
     </label>
     <label class="logo">
 
@@ -57,216 +63,313 @@
     
   </label>
     
-    <ul>
-      <li><a href="aboutus.html" class="list-item hoverable custom-light"><b>About Us</b> </a></li>
+    <ul id="menu">
+      <li><a href="aboutus.html" class="list-item hoverable"><b>About us</b> </a></li>
       <li><a href="#features" class="list-item hoverable"><b>Features</b> </a></li>
-      <li><a href="contactus.html" class="list-item hoverable"><b>Contact Us</b> </a></li>
-      <li><a href="#" class="list-item hoverable custom-light-border" id="signin"><b>Sign In !</b> </a></li>
+      <li><a href="contactus.html" class="list-item hoverable"><b>Contact us</b> </a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=co.paynav.app" class="list-item hoverable custom-dark darkenscroll" id="signin" ><b>Sign In !</b> </a></li>
     </ul>
 </nav>
 
-<div class="intro-page">
-  <div class="container cust-container">
-    <div class="row align-items-center">
-      <div class="col-md-6 cust-col ">
-        <img src="static/images/splashmob.png" style="margin-left: -50px; padding-right: 100px;" alt="" class="home-mob-screen">
-        <div class="mob-header-img text-center">
-          <img src="static/images/Logos/white.png" class="mobile-header-logo" alt="">
+
+
+<!-- <div class="fabs" onclick="toggleBtn()" style="z-index: 999;">
+  <div class="action">
+    <i class="fas fa-plus" id="add"></i>
+    <i class="fas fa-times" id="remove" style="display: none"></i>
+  </div>
+
+  <div class="btns">
+    <a href="#" class="btn" style="background: #473DE7" style="height: 100px !important; width: 100px !important;"
+      ><i class="	fa fa-play"></i
+    ></a>
+    <a href="#" class="btn" style="background: #473DE7" style="height: 100px !important; width: 100px !important;"
+      ><i class="fa fa-download"></i
+    ></a>
+  </div>
+</div> -->
+  <div class="floating-container">
+    <!-- <span class="fab-label">Download</span> -->
+    <div class="floating-image-container">
+      <a href="https://play.google.com/store/apps/details?id=co.paynav.app" target="_blank"><img src="static/images/dwn.png" alt="" class="floating-image"></a>
+    </div>
+  </div>
+
+
+  <div class="intro-page">
+    <div class="container cust-container">
+      <div class="row align-items-center">
+        <div class="col-md-4 cust-col ">
+          <img src="static/images/mobile -splash.png" style="margin-left: -20px; margin-top: -40px;padding-right: 100px;" alt="" class="home-mob-screen">
+
+          <div class="mob-header-img text-center">
+            <img src="static/images/Logos/white.png" class="mobile-header-logo" alt="">
+          </div>
         </div>
-      </div>
-      <div class="col-md-6 cust-col">
-        <div class="landing-heading cust-col">
-          Lend and Borrow money with <br>
-          friends, family and acquaintance !
+        <div class="col-md-8 cust-col">
+          <div class="landing-heading cust-col">
+            Lend and Borrow money with <br>
+            friends, family and acquaintance !
+          </div>
+          <div class="landing-body mt-4 cust-col">
+            India’s first relationship based app to securely<br>
+            lend & borrow with friends & family.            
+          </div>
+          <div class="landing-download cust-col">
+            <a href="https://play.google.com/store/apps/details?id=co.paynav.app"><img src="static/images/download-button.png" class="landing-download-button" alt="">
+            </div></a>
+          <div class="store-download-elements cust-col">
+            <a href="ioscontactus.html"><img src="static/images/ios.png" style="margin-left: 280px !important;" alt="" class="downloadable-imgs"></a>
+            <a href="https://play.google.com/store/apps/details?id=co.paynav.app"><img src="static/images/google-home.png" alt="" class="downloadable-imgs"></a>
+          </div>
+
+          <div class="container-fluid container-mobile">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="special-logo text-center">
+                  <a href="index.html"><img class="special-logo-image" src="static/images/Logos/white.png"/></a>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-12">
+                <div class="special-heading text-center">
+                  Lend and Borrow money with <br>
+                  friends, family and acquaintance !
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="special-body text-center">
+                  India’s first relationship based app to securely<br>
+                lend & borrow with friends & family
+                </div>
+                . 
+              </div>
+            </div>
+            <div class="row justify-content-center align-items-start">
+              <div class="col-md-12">
+                <div class="special-download text-center">
+                   <a href="https://play.google.com/store/apps/details?id=co.paynav.app"><img src="static/images/gplay-glossy.png" alt="" class="mob-dwnld"></a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          
         </div>
-        <div class="landing-body mt-4 cust-col">
-          India’s first relationship based app to securely<br>
-          lend & borrow with friends & family.            
-        </div>
-        <div class="landing-download cust-col">
-          <a href="https://play.google.com/store/apps/details?id=co.paynav.app"><img src="static/images/download-button.png" class="landing-download-button" alt="">
-          </div></a>
-        <div class="store-download-elements cust-col">
-          <img src="static/images/ios.png" style="margin-right: 40px; margin-left: 100px;" alt="" class="downloadable-imgs">
-          <a href="https://play.google.com/store/apps/details?id=co.paynav.app"><img src="static/images/google-home.png" alt="" class="downloadable-imgs"></a>
-        </div>
-        <a href="https://play.google.com/store/apps/details?id=co.paynav.app"><img src="static/images/gplay-glossy.png" alt="" class="mob-dwnld"></a>
       </div>
     </div>
   </div>
-</div>
-
+ 
+    
+  <div class="wrapper">
   
-<div class="wrapper">
-
-  <!-- BODY CONTENT -->
-  <div class="container-fluid " style="margin: 0rem; padding: 0rem;">
-    <!-- PAGE 1 -->
-    <div class="row  justify-content-center align-items-center ">
-
-
-      <div  class="col-sm-6 order-1 order-lg-2"  id="right1">           
-        <div class="imgr"> <img src="static/images/first.png" class="img-fluid img-cust" /></div>            
-      </div> 
-
-      <div   class="col-sm-6 order-2 order-lg-1" id="left1">
-        <div class="section-heading-l">
-          <span>Hi There!<br> Welcome to <span class="highlightme">PayNav</span></span>
+    <!-- BODY CONTENT -->
+    <div class="container-fluid " style="margin: 0rem; padding: 0rem;">
+      <!-- PAGE 1 -->
+      <div class="row  justify-content-center align-items-center  outer-rower ">
+  
+  
+        <div  class="col-sm-6 order-1 order-lg-2"  id="right1">           
+          <div class="imgr"> <img src="static/images/first.png" class="img-fluid img-cust" /></div>            
+        </div> 
+  
+        <div   class="col-sm-6 order-2 order-lg-1" id="left1">
+          <div class="section-heading-l">
+            <span>Hi There!<br> Welcome to <span class="highlightme">PayNav</span></span>
+          </div>
+          <div class="section-content-l">
+            <ul class="section-description-l">
+              <li class="index-li">
+                Send money, mitigating the risk of not getting it back if your dear ones are asking 
+              </li>
+              <li class="index-li">
+                Get help instantly in time of contingency from your friends 
+              </li>
+              <li class="index-li">
+                Don’t leave your dear ones in trouble when you have power to help and they are honest to return<br> ( Asking through PayNav is honesty ) 
+              </li>
+              <li class="index-li">
+                Build credit strength, now with personal transactions and shopping 
+              </li>
+            </ul>
+          </div>                
         </div>
-        <div class="section-content-l">
-          <ul class="section-description-l">
-            <li>
-              Send money mitigating the risk of not getting it back if your dear ones are asking 
-            </li>
-            <li>
-              Get help instantly in time of contingency from your friends 
-            </li>
-            <li>
-              Don’t leave your dear ones in trouble if you have power to <br>help and they are honest to return<br> ( Asking through PayNav is honesty ) 
-            </li>
-            <li>
-              Build credit strength now with personal transactions <br>and shopping 
-            </li>
-          </ul>
-        </div>                
+  
+        
+                    
+      </div>          
+      <!-- PAGE 2 -->
+      <div class="row  justify-content-center align-items-center  outer-rower" id="features">
+        <div  class="col-sm-6 ">
+            <div class="imgl"> <img src="static/images/second.png"  class="img-fluid img-cust-bit-large" style=" position:relative;left: 0; float: Left;"/></div>         
+        </div>
+        <div  class="col-sm-6 ">
+          <div  class="section-heading-r" >
+            <span>No more awkward<br> moments of  <span class="highlightme">Reminding</span></span>
+          </div>
+          <div class="section-content-r">
+            <ul class="section-description-r">
+              <li class="index-li">
+                E-signature terms as proof of transaction 
+              </li>
+              <li class="index-li">
+                Promised payback dates
+              </li>
+              <li class="index-li">
+                No math to do, Automated ledger 
+              </li>
+              <li class="index-li">
+                Real time transactions using UPI 
+              </li>
+            </ul>
+          </div>
+        </div>            
       </div>
-
-      
+      <!-- PAGE 3 -->
+      <div class="row  justify-content-center align-items-center  outer-rower">
+  
+        <div  class="col-sm-6 order-1 order-lg-2">            
+          <div class="imgr"> <img src="static/images/third.png" class="img-fluid img-cust-bit-small-sexy" style=" position:relative;right: 0; float: Right;"/></div>            
+        </div>  
+  
+  
+        <div   class="col-sm-6 order-2 order-lg-1">
+          <div class="section-heading-l">
+            <span><span class="highlightme">Easy </span> to use</span>
+          </div>
+          <div class="section-content-l">
+            <ul class="section-description-l">
+              <li class="index-li">
+                Login and set up with in minutes 
+              </li>
+              <li class="index-li">
+                Request your pal for fund  
+              </li>
+              <li class="index-li">
+                Let them check the return date, terms,<br>e-sign and transfer 
+              </li>
+              <li class="index-li">
+                Aye! Funds straight into your bank account 
+              </li>
+            </ul>
+          </div>                
+        </div>
                   
-    </div>          
-    <!-- PAGE 2 -->
-    <div class="row  justify-content-center align-items-center" id="features">
-      <div  class="col-sm-6 ">
-          <div class="imgl"> <img src="static/images/second.png"  class="img-fluid img-cust" style=" position:relative;left: 0; float: Left;"/></div>         
+      </div>        
+      <!-- PAGE 4 -->
+      <div class="row  justify-content-center align-items-center  outer-rower">
+        <div  class="col-sm-6 ">
+            <div class="imgl"> <img src="static/images/fourth.png" class="img-fluid img-cust-bit-large" style=" position:relative;left: 0; float: Left;"/></div>         
+        </div>
+        <div   class="col-sm-6 ">
+          <div class="section-heading-r">
+            <span> <span class="highlightme"><b>Safe </span>& Secure </b> </span>
+          </div>
+          <div class="section-content-r">
+            <ul class="section-description-r">
+              <li class="index-li">
+                Highly secure and Encrypted process 
+              </li>
+              <li class="index-li">
+                Finger print & Password authentication 
+              </li>
+              <li class="index-li">
+                100% verified users, no fake profiles  
+              </li>
+              <li class="index-li">
+                Sustainable risk free financial environment 
+              </li>
+            </ul>
+          </div>
+        </div>
+      <!-- END  -->
       </div>
-      <div  class="col-sm-6 ">
-        <div  class="section-heading-r" >
-          <span>No more awkward<br> moments of  <span class="highlightme">Reminding</span></span>
-        </div>
-        <div class="section-content-r">
-          <ul class="section-description-r">
-            <li>
-              E-signature terms as proof of transaction 
-            </li>
-            <li>
-              Promised payback dates
-            </li>
-            <li>
-              No math to do, Automated ledger 
-            </li>
-            <li>
-              Real time transactions using UPI 
-            </li>
-          </ul>
-        </div>
-      </div>            
+  
+  
+  
     </div>
-    <!-- PAGE 3 -->
-    <div class="row  justify-content-center align-items-center">
-
-      <div  class="col-sm-6 order-1 order-lg-2">            
-        <div class="imgr"> <img src="static/images/third.png" class="img-fluid img-cust" style=" position:relative;right: 0; float: Right;"/></div>            
-      </div>  
-
-
-      <div   class="col-sm-6 order-2 order-lg-1">
-        <div class="section-heading-l">
-          <span><span class="highlightme">Easy </span> to use</span>
-        </div>
-        <div class="section-content-l">
-          <ul class="section-description-l">
-            <li>
-              Login and set up with in minutes 
-            </li>
-            <li>
-              Request your pal for fund  
-            </li>
-            <li>
-              Let them check the return date, terms,<br>e-sign and transfer 
-            </li>
-            <li>
-              Aye! Fund straight into your bank account 
-            </li>
-          </ul>
-        </div>                
-      </div>
-                
-    </div>        
-    <!-- PAGE 4 -->
-    <div class="row  justify-content-center align-items-center">
-      <div  class="col-sm-6 ">
-          <div class="imgl"> <img src="static/images/fourth.png" class="img-fluid img-cust" style=" position:relative;left: 0; float: Left;"/></div>         
-      </div>
-      <div   class="col-sm-6 ">
-        <div class="section-heading-r">
-          <span> <span class="highlightme">Safe </span>& Secure </span>
-        </div>
-        <div class="section-content-r">
-          <ul class="section-description-r">
-            <li>
-              Highly secure and Encrypted process 
-            </li>
-            <li>
-              Finger print & Password authentication 
-            </li>
-            <li>
-              100% verified users, no fake profiles  
-            </li>
-            <li>
-              Sustainable risk free financial environment 
-            </li>
-          </ul>
-        </div>
-      </div>
-    <!-- END  -->
-    </div>
-
-
-
-  </div>
-
-
-
-  <div class="card container border rounded-10 shadow p-3 mb-5 bg-white rounded" style="margin-top: 30px ;padding: 30px; border-radius: 20px !important;">
-    <div class="card-title justify-content-center centerTest"><span ><span class="highlightme" style="font-weight: 600; font-size: 30px; text-align: center;">User Reviews<br></span></span>
-
-    <span ><span class="highlightme" style="font-weight: 600;color: rgba(0,0,0,.6);font-size: 25px; text-align: center;">What our users are saying ...<br><br></span></span></div>
-    <div class="row">
-
-      <div class="col-sm-4">
-        <div  class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
+  
+  
+  
+    <div class="card container-fluid border rounded-10 shadow mb-5 bg-white rounded team-ka-container">
+      <div class="card-title justify-content-center centerTest custom-title"><span ><span class="highlightme" style="font-weight: 600; font-size: 40px; text-align: center;">User Reviews<br></span></span>
+      <div class="ctxt-wrapper"> <span ><span class="highlightme ctxt" style="font-weight: 600;color: rgba(0,0,0,.6);">What our users are saying...<br><br></span></span></div></div>
+     
+      
+      <div class="card-deck card-deck-wrapper" style="margin-top: 35px !important;">
+        <div class="card shadow" style="padding:15px">
           <img src="static/images/invertedgreen.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
-          <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; text-align: justify; font-weight: 600;">
-            <!-- <h5 class="card-title">Welcome Customers</h5> -->
-            <p class="card-text">Very helpful for managing all my personal lending/borrowing with friends and family. There are many facilities available in this app like online ledger, automated payback reminder,E-Sign etc but the main thing is the direct real time transaction from my upi id to my friends upi.</p>
-          </div>
-          <img class="card-img-bottom" src="static/images/review1.png" alt="Card image cap">
-        </div>
-      </div>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">Very helpful for managing all my personal lending/ borrowing with friends and family. Many facilities are available like ledger, automated payback reminder, E-Sign etc the main thing is the real time transaction from my upi id to my friends upi.</p>
+            </div>
+            <img class="card-img-bottom bottom-card-image img-fluid" style="margin-top: -10px;" src="static/images/review1.png" alt="Card image cap">
 
-      <div class="col-sm-4">
-        <div  class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
+        </div>
+        <div class="card shadow" style="padding:15px">
           <img src="static/images/invertedblue.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
-          <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; text-align: justify; font-weight: 600;">
-            <!-- <h5 class="card-title">Welcome Customers</h5> -->
-            <p class="card-text" >Problem solving app for many money lending between friends, many people will not meet their obligations when it comes to money but using this app surely they will😅. Thanks to Paynav for this amazing "meet your obligations" app.</p>
-          </div>
-          <img class="card-img-bottom" src="static/images/review2.png" alt="Card image cap">
-        </div>
-      </div>
+              <div class="card-body">
+                <p class="card-text" style="text-align: justify;" >Problem solving app for many money lending between friends and acquaintance, many people will not meet their obligations when it comes to money but using this app surely they will😅. Thanks to Paynav for this amazing "meet your obligations" app.</p>
+              </div>
+              <img class="card-img-bottom bottom-card-image img-fluid" src="static/images/review2.png" alt="Card image cap">
 
-      <div class="col-sm-4">
-        <div  class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 10px !important;">
-          <img src="static/images/invertedpurple.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
-          <div class="card-body" style="margin-bottom: 0rem; height: 250px; padding: 20px; text-align: justify; font-weight: 600;">
-            <p class="card-text">This app is great for all people, especially for people with personal financial intelligence. It keeps track of the money you lent. Good to have my money back same time have my friendships tight. One word Hassle free.</p>
-          </div>
-          <img class="card-img-bottom" src="static/images/review3.png" alt="Card image cap">
         </div>
-      </div>
+        <div class="card shadow" style="padding:15px">
+          <img src="static/images/invertedpurple.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">This app is great for all people, especially for people with personal financial intelligence. It keeps track of the money you lend and borrow. Good to have my money back and same time have my friendships tight. One word Hassle free.</p>
+            </div>
+            <img class="card-img-bottom bottom-card-image img-fluid" src="static/images/review3.png" alt="Card image cap">
+        </div>
     </div>
-  </div>
-</div> 
+      
+      
+      
+      
+      
+      
+      <!-- <div class="row custom-row" >
+  
+        <div class="col-sm-4">
+          <div  class="card h-100 shadow p-3 mb-5 bg-white rounded child-outer" style="border-radius: 10px !important;" id="cord1">
+            <img src="static/images/invertedgreen.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
+            <div class="card-body child-card-body">
+              
+              <p class="card-text">Very helpful for managing all my personal lending/borrowing with friends and family. Many facilities are available like ledger, automated payback reminder,E-Sign etc the main thing is the real time transaction from mine id to my friends upi.</p>
+            </div>
+            <img class="card-img-bottom bottom-card-image" style="margin-top: -10px;" src="static/images/review1.png" alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-sm-4">
+          <div  class="card h-100 shadow p-3 mb-5 bg-white rounded child-outer" style="border-radius: 10px !important;" id="cord2">
+            <img src="static/images/invertedblue.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
+            <div class="card-body child-card-body">
+              
+              <p class="card-text" >Problem solving app for many money lending between friends and acquaintance, many people will not meet their obligations when it comes to money but using this app surely they will😅. Great UI and features. Thanks to Paynav for this amazing "meet your obligations" app.</p>
+            </div>
+            <img class="card-img-bottom bottom-card-image" src="static/images/review2.png" alt="Card image cap">
+          </div>
+        </div>
+  
+        <div class="col-sm-4">
+          <div  class="card h-100 shadow p-3 mb-5 bg-white rounded child-outer" style="border-radius: 10px !important;" id="cord3">
+            <img src="static/images/invertedpurple.png" class="card-img-top mb-3" style="width: 25px; height: 22px;" alt="">
+            <div class="card-body child-card-body">
+              <p class="card-text">This app is great for all people, especially for people with personal financial intelligence. It keeps track of the money you lend and borrow. Good to have my money back and same time have my friendships tight. One word Hassle free.</p>
+            </div>
+            <img class="card-img-bottom bottom-card-image" src="static/images/review3.png" alt="Card image cap">
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div> 
+
+
+
+
 
 
   <footer class="section footer-classic home-bottom-footer" id="footer-container">
@@ -280,10 +383,10 @@
               <a style="text-decoration: none;" href="index.html">Home</a>
             </div>
               <div class="footer-item footer-link">
-                <a style="text-decoration: none;" href="aboutus.html">About us</a>
+                <a style="text-decoration: none;" href="aboutus.html">About</a>
               </div>
               <div class="footer-item footer-link">
-                <a style="text-decoration: none;" href="contactus.html">Contact us</a>
+                <a style="text-decoration: none;" href="contactus.html">Contact</a>
               </div>
             </div><div class="col-md-4 links-container">
             <div class="footer-item footer-link">
@@ -293,7 +396,7 @@
               <a style="text-decoration: none;" href="careers.html">Careers</a>
             </div>
             <div class="footer-item footer-link">
-              <a style="text-decoration: none;" href="privacy.html" >Privacy policy</a>
+              <a style="text-decoration: none;" href="privacy.html" >Privacy </a>
             </div><a style="text-decoration: none;" href="patnerwithus.html"><img src="static/images/pat.png" class="patimg1" alt=""></a>
           </div><div class="col-md-4 links-container">
             <div class="footer-item footer-link">
@@ -306,7 +409,7 @@
               <a style="text-decoration: none;" href="consent.html">Consent</a>
             </div>
             <a style="text-decoration: none;" href="patnerwithus.html"><img src="static/images/pat.png" class="patimg2" alt=""></a>
-            <a style="text-decoration: none;" href="https://play.google.com/store/apps/details?id=co.paynav.app"><img src="static/images/google-home.png" class="img-thumbnail text-md-center"style="width: 160px; padding:0px;align-self: center; margin-top:30px" alt=""></a>
+            <a style="text-decoration: none;" href="https://play.google.com/store/apps/details?id=co.paynav.app"><img src="static/images/google-home.png" class="img-thumbnail text-md-center footer-download" alt=""></a>
 
             </div>
         </div>
@@ -319,10 +422,10 @@
           <div class="social-container">
             <div class="follow-us-on ">Follow us on</div>
             <div class="social-handles">
-              <span class="handle"><a href="https://instagram.com/paynav"><i class="fa fa-instagram fa-2x col-icon" aria-hidden="true"></i></a> </span>
-              <span class="handle"><a href="https://twitter.com/PayNavco"><i class="fa fa-twitter fa-2x col-icon" aria-hidden="true"></i> </a></span>
-              <span class="handle"><a href="https://linkedin.com/company/paynav"><i class="fa fa-linkedin fa-2x col-icon" aria-hidden="true"></i></a> </span>
-              <span class="handle"><a href="https://facebook.com/paynavco"><i class="fa fa-facebook fa-2x col-icon" aria-hidden="true"></i></a> </span>
+              <span class="handle"><a href="https://instagram.com/paynav" target="_blank"><i class="fa fa-instagram fa-2x col-icon" aria-hidden="true"></i></a> </span>
+              <span class="handle"><a href="https://twitter.com/PayNavco" target="_blank"><i class="fa fa-twitter fa-2x col-icon" aria-hidden="true"></i> </a></span>
+              <span class="handle"><a href="https://linkedin.com/company/paynav" target="_blank"><i class="fa fa-linkedin fa-2x col-icon" aria-hidden="true"></i></a> </span>
+              <span class="handle"><a href="https://facebook.com/paynavco" target="_blank"><i class="fa fa-facebook fa-2x col-icon" aria-hidden="true"></i></a> </span>
             </div>
           </div>
           <div class="logo-copyright-container">
@@ -335,7 +438,7 @@
               </a>
             </div>
             <div class="footer-copyright">
-              <p>© 2020 PayNav Inc. All rights reserved.</p>
+              <p>© 2020 PayNav. All rights reserved.</p>
             </div>
           </div>    
         </div>        
@@ -350,19 +453,23 @@
   <script>
     var d = document.getElementById("nav-dwn");
     var txt = document.getElementById('signin');
-var width = $(window).width();
+  var width = $(window).width();
     if (width <= 480) {
       //code for mobile devices 
+      $('.child-outer').removeClass('h-100').addClass('test');
       d.style.display='inline-block';
       $('.list-item').toggleClass('scrolled.mob', $(this).scrollTop() > 50);
-      txt.style.color = '#fff !important';
+      txt.style.color = '#000 !important';
 
     } else {
       //code for other devices
+      $('.darkenscroll').toggleClass('custom-light-signin');
       d.style.display='none';
       $(window).scroll(function(){
       $('.bg').toggleClass('scrolled', $(this).scrollTop() > 50);
       $('.list-item').toggleClass('scrolled', $(this).scrollTop() > 50);
+      $('.darkenscroll').toggleClass('custom-dark', $(this).scrollTop() > 50);
+      $('.darkenscroll').toggleClass('custom-light-signin', $(this).scrollTop() < 50);
       })
     }
 
@@ -399,6 +506,42 @@ var width = $(window).width();
     })
      
   </script>
+
+  <script>
+    $('#check').on('click', function (e) {
+    $('#menu').toggleClass('expanded');
+    $('.checkbtn i').removeClass().addClass(
+        $('#menu.expanded').length ? 'fa fa-times fa-class' : 'fa fa-bars fa-class'
+    );
+});
+  </script>
+<script>
+  function toggleBtn() {
+    const Btns = document.querySelector(".btns");
+    const add = document.getElementById("add");
+    const remove = document.getElementById("remove");
+    const btn = document.querySelector(".btns").querySelectorAll("a");
+    Btns.classList.toggle("open");
+    if (Btns.classList.contains("open")) {
+      remove.style.display = "block";
+      add.style.display = "none";
+      btn.forEach((e, i) => {
+        setTimeout(() => {
+          bottom = 40 * i;
+          e.style.bottom = bottom + "px";
+          console.log(e);
+        }, 100 * i);
+      });
+    } else {
+      add.style.display = "block";
+      remove.style.display = "none";
+      btn.forEach((e, i) => {
+        e.style.bottom = "0px";
+      });
+    }
+  }
+</script>
+
   
 </body>
 </html>

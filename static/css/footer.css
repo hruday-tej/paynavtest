@@ -118,3 +118,17 @@
         margin-left: 0px;
     }
 }
+
+.footer-download{
+    margin-left:-100px;
+    width: 150px; 
+    padding:0px !important;
+    align-self: center;
+    margin-top:70px; 
+}
+@media(max-width:768px){
+    .footer-download{
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}

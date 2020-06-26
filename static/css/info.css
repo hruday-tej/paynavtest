@@ -14,7 +14,7 @@ html, body{
 
 ​.imgr{
     float:right;
-    height:auto;
+    height:42rem;
     align-self: flex-end;
     position: absolute;
     width: auto;
@@ -31,17 +31,55 @@ html, body{
 }
 
 .img-cust{
-     height:43rem ;
+     height:42rem !important;
      position:relative;
      right: 0; 
      float: Right;
 }
 @media (max-width:768px){
     .img-cust{
-        height: 38rem;
+        height: 33rem !important;
+    }
+}
+.img-cust-bit-large{
+     height:42rem !important;
+     position:relative;
+     right: 0; 
+     float: Right;
+}
+@media (max-width:768px){
+    .img-cust-bit-large{
+        height: 39rem !important;
+    }
+}
+.img-cust-bit-small{
+     height:42rem !important;
+     position:relative;
+     right: 0; 
+     float: Right;
+}
+@media (max-width:768px){
+    .img-cust-bit-small{
+        height: 28rem !important;
+    }
+}
+.img-cust-bit-small-sexy{
+     height:42rem !important;
+     position:relative;
+     right: 0; 
+     float: Right;
+}
+@media (max-width:768px){
+    .img-cust-bit-small-sexy{
+        height: 30rem !important;
     }
 }
 
 *{
-    font-family: 'Roboto'   ;
+    font-family: 'Roboto' ,'sans-serif'  ;
+    /* font-weight: 500 !important; */
+}
+
+a{
+    text-decoration: none !important;   
 }
