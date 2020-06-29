@@ -24,6 +24,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <!-- Font Families Only -->
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -170,9 +171,10 @@
         <div class="card container-fluid border rounded shadow bg-white round team-ka-container" >
             <div class="card-deck card-deck-wrapper">
                 <div class="card custom-team-card shadow hoverer1">
-                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/naveen.png"  alt="Card image cap" id="naveen">
+                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/naveen.png"  alt="Card image cap" id="naveen-img">
+                    <img class="card-img-top spacious" style="display: none;" id="naveen-gif" src="static/images/aboutus/gif/naveen.gif" alt="">
                     <!-- <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/126ub9tbJhoXh6" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/batman-arkham-knight-james-gordon-126ub9tbJhoXh6">via GIPHY</a></p> -->
-                    <!-- <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/SmwsaXanCdOxy" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div> -->
+                    <!-- <div stclyle="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/SmwsaXanCdOxy" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div> -->
                     <div class="card-body">
                         <h5 class="card-title text-center">Naveen Patnaik</h5>
                         <p class="designation text-center">CEO</p>
@@ -183,7 +185,8 @@
                     </div>
                 </div>
                 <div class="card custom-team-card shadow hoverer2">
-                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/rahul.png"  alt="Card image cap" id="rahul">
+                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/rahul.png"  alt="Card image cap" id="rahul-img">
+                    <img src="static/images/aboutus/gif/rahul.gif" alt="" class="card-img-top spacious" id="rahul-gif" style="display:none">
                     <div class="card-body">
                         <h5 class="card-title text-center">Rahul Sundar </h5>
                         <p class="designation text-center">COMRADE</p>
@@ -194,7 +197,8 @@
                     </div>
                 </div>
                 <div class="card custom-team-card shadow hoverer3">
-                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/pragya.png"  alt="Card image cap" id="pragya">
+                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/pragya.png"  alt="Card image cap" id="pragya-img">
+                    <img class="card-img-top spacious text-center" src="static/images/aboutus/gif/pragya.gif"  alt="Card image cap" id="pragya-gif" style="display:none">
                     <div class="card-body">
                         <h5 class="card-title text-center">Pragnya Srivastava</h5>
                         <p class="designation text-center">GUIDE</p>
@@ -207,7 +211,8 @@
             </div>
             <div class="card-deck card-deck-wrapper-2 ">
                 <div class="card custom-team-card shadow hoverer4">
-                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/vuv.png"  alt="Card image cap" id="flashy">
+                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/vuv.png"  alt="Card image cap" id="flashy-img">
+                    <img class="card-img-top spacious" src="static/images/aboutus/gif/flashy.gif"  alt="Card image cap" id="flashy-gif" style="display:none">
                     <div class="card-body">
                         <h5 class="card-title text-center">Vivek Yaligar</h5>
                         <p class="designation text-center">FLASHY</p>
@@ -218,7 +223,8 @@
                     </div>
                 </div>
                 <div class="card custom-team-card shadow hoverer5">
-                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/bahu.png"  alt="Card image cap" id="bahu"> 
+                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/bahu.png"  alt="Card image cap" id="bahu-img"> 
+                    <img class="card-img-top spacious" src="static/images/aboutus/gif/bahu.gif"  alt="Card image cap" id="bahu-gif" style="display:none"> 
                     <div class="card-body">
                         <h5 class="card-title text-center">Burada Vivek</h5>
                         <p class="designation text-center">BAHUBALI</p>
@@ -228,7 +234,8 @@
                     </div>
                 </div>
                 <div class="card custom-team-card shadow hoverer6">
-                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/arpit.png"  alt="Card image cap" id="arpit">
+                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/arpit.png"  alt="Card image cap" id="arpit-img">
+                    <img class="card-img-top spacious" src="static/images/aboutus/gif/arpit.gif"  alt="Card image cap" id="arpit-gif" style="display:none">
                     <div class="card-body">
                         <h5 class="card-title text-center">Arprit Sudhir</h5>
                         <p class="designation text-center">GOALIE</p>
@@ -241,7 +248,8 @@
             </div>
             <div class="card-deck card-deck-wrapper-2 last-row">
                 <div class="card custom-team-card shadow hoverer7">
-                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/hru.png"  alt="Card image cap" id="hru"> 
+                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/hru.png"  alt="Card image cap" id="hru-img"> 
+                    <img class="card-img-top spacious" src="static/images/aboutus/gif/hru.gif"  alt="Card image cap" id="hru-gif" style="display:none"> 
                     <div class="card-body">
                         <h5 class="card-title text-center">Hruday Tej </h5>
                         <p class="designation text-center">HEARTY</p>
@@ -252,7 +260,8 @@
                     </div>
                 </div>
                 <div class="card custom-team-card shadow hoverer8">
-                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/choco.png"  alt="Card image cap" id="choco">
+                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/choco.png"  alt="Card image cap" id="choco-img">
+                    <img class="card-img-top spacious" src="static/images/aboutus/gif/choco.gif"  alt="Card image cap" id="choco-gif" style="display:none">
                     <div class="card-body">
                         <h5 class="card-title text-center">Mandeep</h5>
                         <p class="designation text-center">CHOCOLATE BOY</p>
@@ -263,7 +272,8 @@
                     </div>
                 </div>
                 <div class="card custom-team-card shadow hoverer9">
-                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/anna.png"  alt="Card image cap" id="anna">
+                    <img class="card-img-top cust-abt-img text-center" src="static/images/aboutus/anna.png"  alt="Card image cap" id="anna-img">
+                    <img class="card-img-top spacious" src="static/images/aboutus/gif/anna.gif"  alt="Card image cap" id="anna-gif" style="display:none">
                     <div class="card-body">
                         <h5 class="card-title text-center">Bhaskar Mummidi</h5>
                         <p class="designation text-center">FILL BELLY</p>
@@ -605,106 +615,174 @@
         AOS.init();
       </script>
 
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 
 <script>
     $(function() {
+        var x = document.getElementById("naveen-img");
+        var y = document.getElementById("naveen-gif");
+        var a = document.getElementById("rahul-img");
+        var b = document.getElementById("rahul-gif");
+        var c = document.getElementById("pragya-img");
+        var d = document.getElementById("pragya-gif");
+        var e = document.getElementById("flashy-img");
+        var f = document.getElementById("flashy-gif");
+        var g = document.getElementById("bahu-img");
+        var h = document.getElementById("bahu-gif");
+        var i = document.getElementById("arpit-img");
+        var j = document.getElementById("arpit-gif");
+        var k = document.getElementById("hru-img");
+        var l = document.getElementById("hru-gif");
+        var m = document.getElementById("choco-img");
+        var n = document.getElementById("choco-gif");
+        var o = document.getElementById("anna-img");
+        var p = document.getElementById("anna-gif");
         $(".hoverer1").hover(
             function() {
-                $("#naveen").attr("src", "static/images/aboutus/gif/naveen.gif");
-                $("#naveen").toggleClass('spacious');
+                // $("#naveen").attr("src", "static/images/aboutus/gif/naveen.gif");
+                // $("#naveen").toggleClass('spacious');
+                x.style.display="none";
+                x.style.transition="0.5s ease-in";
+                // x.fadeOut();
+                y.style.transition="0.5s ease-in";
+                y.style.display="inline-block";
+                // x.hide();
+                // y.fadeIn(4000);
+
                 
             },
             function(){
-                $("#naveen").attr("src","static/images/aboutus/naveen.png");
-                $("#naveen").removeClass('spacious'); 
+                x.style.display="inline-block";
+                y.style.display="none";
+                x.style.transition="0.5s ease-in";
+                y.style.transition="0.5s ease-in";
             }                       
         );                  
         $(".hoverer2").hover(
             function() {
-                $("#rahul").attr("src", "static/images/aboutus/gif/rahul.gif");
-                $("#rahul").toggleClass('spacious');
+                a.style.display="none";
+                a.style.transition="0.5s ease-in";
+                // a.fadeOut();
+                b.style.transition="0.5s ease-in";
+                b.style.display="inline-block";
                 
             },
             function(){
-                $("#rahul").attr("src","static/images/aboutus/rahul.png");
-                $("#rahul").removeClass('spacious'); 
+                a.style.display="inline-block";
+                b.style.display="none";
+                a.style.transition="0.5s ease-in";
+                b.style.transition="0.5s ease-in";
             }                       
         );                  
         $(".hoverer3").hover(
             function() {
-                $("#pragya").attr("src", "static/images/aboutus/gif/pragya.gif");
-                $("#pragya").toggleClass('spacious');
+                c.style.display="none";
+                c.style.transition="0.5s ease-in";
+                // c.fadeOut();
+                d.style.transition="0.5s ease-in";
+                d.style.display="inline-block";
                 
             },
             function(){
-                $("#pragya").attr("src","static/images/aboutus/pragya.png");
-                $("#pragya").removeClass('spacious'); 
+                c.style.display="inline-block";
+                d.style.display="none";
+                c.style.transition="0.5s ease-in";
+                d.style.transition="0.5s ease-in";
             }                       
         );                  
         $(".hoverer5").hover(
             function() {
-                $("#bahu").attr("src", "static/images/aboutus/gif/bahu.gif");
-                $("#bahu").toggleClass('spacious');
+                g.style.display="none";
+                g.style.transition="0.5s ease-in";
+                // g.fadeOut();
+                h.style.transition="0.5s ease-in";
+                h.style.display="inline-block";
                 
             },
             function(){
-                $("#bahu").attr("src","static/images/aboutus/bahu.png");
-                $("#bahu").removeClass('spacious'); 
+                g.style.display="inline-block";
+                h.style.display="none";
+                g.style.transition="0.5s ease-in";
+                h.style.transition="0.5s ease-in";
             }                       
         );                  
         $(".hoverer6").hover(
             function() {
-                $("#arpit").attr("src", "static/images/aboutus/gif/arpit.gif");
-                $("#arpit").toggleClass('spacious');
+                i.style.display="none";
+                i.style.transition="0.5s ease-in";
+                j.style.transition="0.5s ease-in";
+                j.style.display="inline-block";
                 
             },
             function(){
-                $("#arpit").attr("src","static/images/aboutus/arpit.png");
-                $("#arpit").removeClass('spacious'); 
+                i.style.display="inline-block";
+                j.style.display="none";
+                i.style.transition="0.5s ease-in";
+                j.style.transition="0.5s ease-in"; 
             }                       
         );                  
         $(".hoverer7").hover(
             function() {
-                $("#hru").attr("src", "static/images/aboutus/gif/hru.gif");
-                $("#hru").toggleClass('spacious');
+                k.style.display="none";
+                k.style.transition="0.5s ease-in";
+                l.style.transition="0.5s ease-in";
+                l.style.display="inline-block";
                 
             },
             function(){
-                $("#hru").attr("src","static/images/aboutus/hru.png");
-                $("#hru").removeClass('spacious'); 
+                k.style.display="inline-block";
+                l.style.display="none";
+                k.style.transition="0.5s ease-in";
+                l.style.transition="0.5s ease-in"; 
             }                       
         );                  
         $(".hoverer9").hover(
             function() {
-                $("#anna").attr("src", "static/images/aboutus/gif/anna.gif");
-                $("#anna").toggleClass('spacious');
+                o.style.display="none";
+                o.style.transition="0.5s ease-in";
+                p.style.transition="0.5s ease-in";
+                p.style.display="inline-block";
                 
             },
             function(){
-                $("#anna").attr("src","static/images/aboutus/anna.png");
-                $("#anna").removeClass('spacious'); 
+                o.style.display="inline-block";
+                p.style.display="none";
+                o.style.transition="0.5s ease-in";
+                p.style.transition="0.5s ease-in"; 
             }                       
         );                  
         $(".hoverer8").hover(
             function() {
-                $("#choco").attr("src", "static/images/aboutus/gif/choco.gif");
-                $("#choco").toggleClass('spacious');
+                m.style.display="none";
+                m.style.transition="0.5s ease-in";
+                n.style.transition="0.5s ease-in";
+                n.style.display="inline-block";
                 
             },
             function(){
-                $("#choco").attr("src","static/images/aboutus/choco.png");
-                $("#choco").removeClass('spacious'); 
+                m.style.display="inline-block";
+                n.style.display="none";
+                m.style.transition="0.5s ease-in";
+                n.style.transition="0.5s ease-in"; 
             }                       
         );                  
         $(".hoverer4").hover(
             function() {
-                $("#flashy").attr("src", "static/images/aboutus/gif/flashy.gif");
-                $("#flashy").toggleClass('spacious');
+                e.style.display="none";
+                e.style.transition="0.5s ease-in";
+                // e.fadeOut();
+                f.style.transition="0.5s ease-in";
+                f.style.display="inline-block";
                 
             },
             function(){
-                $("#flashy").attr("src","static/images/aboutus/vuv.png");
-                $("#flashy").removeClass('spacious'); 
+                e.style.display="inline-block";
+                f.style.display="none";
+                e.style.transition="0.5s ease-in";
+                f.style.transition="0.5s ease-in";
             }                       
         );                  
     });

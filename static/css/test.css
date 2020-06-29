@@ -457,8 +457,8 @@ section{
 }
 
 .floating-container{
-  bottom: 40px;
-  right: 35px;
+  bottom: 34px;
+  right: 27px;
   position: fixed;
   height: 80px;
   width: 80px;

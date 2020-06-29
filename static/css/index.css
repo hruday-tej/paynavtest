@@ -529,4 +529,34 @@ html{
 }
 
 
+.youtube-container{
+    margin-top: 250px;
+    margin-bottom: 100px;
+    height: 30rem !important;
+    width: 50rem !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width:768px){
+    .youtube-container{margin-top: 100px;}
+}
 
+.ytp-icon .ytp-icon-large-play-button-hover{
+    display: inline;
+}
+
+@media(max-width:768px){
+    .ytp-icon .ytp-icon-large-play-button-hover{
+        visibility: hidden !important;
+        background: none !important;
+    }
+}
+
+.custom-you{
+    height: 30rem !important;
+    width: 50rem !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
