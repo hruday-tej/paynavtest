@@ -528,35 +528,151 @@ html{
     margin-top: 100px;
 }
 
-
-.youtube-container{
-    margin-top: 250px;
+    
+.youtube-image{
+    height: 26.5rem;
+    width: 45rem;
+    margin-top: 100px;
     margin-bottom: 100px;
-    height: 30rem !important;
-    width: 50rem !important;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 @media(max-width:768px){
-    .youtube-container{margin-top: 100px;}
-}
-
-.ytp-icon .ytp-icon-large-play-button-hover{
-    display: inline;
-}
-
-@media(max-width:768px){
-    .ytp-icon .ytp-icon-large-play-button-hover{
-        visibility: hidden !important;
-        background: none !important;
+    .youtube-image{
+        margin-top: 80px;
+        margin-bottom: 30px;
     }
 }
 
-.custom-you{
-    height: 30rem !important;
-    width: 50rem !important;
-    display: block;
+.youtube-video{
+    height: 26.5rem !important;
+    width: 45rem !important;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+@media(max-width:768px){
+    .youtube-video{
+        margin-bottom: 30px;
+        margin-top: 80px;
+    }
+}
+
+
+
+/* .yu-container{
+    position: fixed;
+    z-index: 9999;
+    background: rgba(0,0,0,.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.cross{
+    float: right;
+    right: 0px;
+    top: 0px;
+}
+
+
+/* scammmm */
+
+.video {
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.video__placeholder {
+    min-width: 100%;
+    display: block;
+}
+.video__button {
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: block;
+    border: 3px solid #232439;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%) translateY(-50%);
+}
+.video__button:before, .video__button:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #232439;
+    width: 35px;
+    height: 3px;
+    top: 50%;
+    left: 35%;
+    transition: background-color 0.3s;
+}
+.video__button:before {
+    transform: translateY(-11px) rotate(45deg);
+}
+.video__button:after {
+    transform: translateY(11px) rotate(-45deg);
+}
+.video__button.is-playing {
+    top: 1rem;
+    right: 1rem;
+    left: auto;
+    transform: none;
+}
+.video__button.is-playing:before, .video__button.is-playing:after {
+    left: 32%;
+}
+.video__button.is-playing:before {
+    transform: translateY(0) rotate(45deg);
+}
+.video__button.is-playing:after {
+    transform: translateY(0) rotate(-45deg);
+}
+.video:hover .video__button {
+    border-color: #6ddce5;
+}
+.video:hover .video__button:before, .video:hover .video__button:after {
+    background-color: #6ddce5;
+}
+#video-player {
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+}
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+.header {
+    background-color: #232439;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.header a {
+    margin-top: 1rem;
+    display: block;
+    color: #6ddce5;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+.header__title {
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
 }
