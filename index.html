@@ -91,7 +91,7 @@
   <div class="floating-container">
     <!-- <span class="fab-label">Download</span> -->
     <div class="floating-image-container">
-      <a href="https://play.google.com/store/apps/details?id=co.paynav.app" target="_blank"><img src="static/images/dwn.png" alt="" class="floating-image"></a>
+      <a href="https://play.google.com/store/apps/details?id=co.paynav.app" target="_blank"><img src="static/images/dwn.png" alt="" class="floating-image wiggle" ></a>
     </div>
   </div>
 
@@ -292,19 +292,25 @@
   
     </div>
 
-    <div class="container youtube-container">
-      <div class="youtube-container">
-        <div id="player-0pop"></div>
-        <div class="splash-image">
-           <img class="img-thumbnail custom-you"   src="static/images/videoplay.png">
-        </div>
-     </div>
-     <script>
-        var youtubeId = 'JFVdy1EyDCk';
-     </script>
-     <script src="https://s3.amazonaws.com/assets.offerpop.com/add_ons/youtube-image/youtube-embed.min.js">;
-     </script>
+    <div class="container">
+      <div class="cross" onclick="console.log('fucked me'); thevid=document.getElementById('thevideo');$('#video').attr('src','static/images/');closer=document.getElementById('closer');closer.style.display='none';photo=document.getElementById('img-placeholder'); photo.style.display='block';">
+        <i class="fa fa-times fa-2x fa-thin" id="closer" style="display: none;"></i>
+      </div>
+      <div id="img-placeholder"  onclick="closer=document.getElementById('closer');thevid=document.getElementById('thevideo'); closer.style.display='block';thevid.style.display='block';$('#video')[0].src += '?autoplay=1'; this.style.display='none'" class="text-center">
+      <img src="static/images/youtubescreen.png" class="img-fluid youtube-image " style="cursor:pointer;" />
     </div>
+    <div id="thevideo" style="display:none; z-index: 9999;" class="text-center yu-container">
+       
+      <iframe src="https://www.youtube.com/embed/JFVdy1EyDCk" id="video" class="img-fluid text-center youtube-video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- <section class="video">
+      <img src="static/images/youtubescreen.png" data-video="https://www.youtube.com/embed/JFVdy1EyDCk?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&autoplay=1" title="Play Video" class="video__placeholder" frameborder="0" allow="autoplay"/>
+      <button class="video__button"></button>
+    </section> -->
+    </div>
+
+    
   
   
   
@@ -556,6 +562,18 @@
   }
 </script>
 
+<script>
+  $('.video__placeholder, .video__button').on('click', function() {
+  if ( !$('#video-player').length ) {
+    var video = '<iframe id="video-player" src="' + $('.video__placeholder').attr('data-video') + '" frameborder="0" allowfullscreen wmode="opaque"></iframe>';
+    $(video).insertAfter( $('.video__placeholder') );
+    $('.video__button').addClass('is-playing');
+  } else {
+    $('.video__button').removeClass('is-playing');
+    $('#video-player').remove();
+  }
+});
+</script>
   
 </body>
 </html>
